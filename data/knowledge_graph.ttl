@@ -1,0 +1,4573 @@
+@prefix ex: <https://contoso.com/vendas/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:CategoriaVenda a owl:Class .
+
+ex:Produto a owl:Class .
+
+ex:Regiao a owl:Class .
+
+ex:temCategoria a owl:ObjectProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range skos:Concept .
+
+ex:temDataVenda a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+ex:temMetaKPI a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+ex:temProduto a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+ex:temQuantidadeVendida a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+ex:temReceita a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+ex:temRegiao a owl:DatatypeProperty ;
+    rdfs:domain ex:Venda ;
+    rdfs:range rdfs:Literal .
+
+<https://contoso.com/vendas/venda/1> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-15 00:00:00" ;
+    ex:temMetaKPI 1.68445e+03 ;
+    ex:temProduto "Attack" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 4.07724e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/10> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-28 00:00:00" ;
+    ex:temMetaKPI 1.63659e+03 ;
+    ex:temProduto "Relationship" ;
+    ex:temQuantidadeVendida 50 ;
+    ex:temReceita 9.86018e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/100> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 2.35007e+03 ;
+    ex:temProduto "Young" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 6.89988e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/101> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-17 00:00:00" ;
+    ex:temMetaKPI 3.62072e+03 ;
+    ex:temProduto "Theory" ;
+    ex:temQuantidadeVendida 2 ;
+    ex:temReceita 5.23282e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/102> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-30 00:00:00" ;
+    ex:temMetaKPI 1.2817e+03 ;
+    ex:temProduto "Although" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 8.46067e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/103> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-13 00:00:00" ;
+    ex:temMetaKPI 4.83271e+03 ;
+    ex:temProduto "Real" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 2.8021e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/104> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-06 00:00:00" ;
+    ex:temMetaKPI 1.26339e+03 ;
+    ex:temProduto "Significant" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 6.74319e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/105> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-03 00:00:00" ;
+    ex:temMetaKPI 1.28038e+03 ;
+    ex:temProduto "Citizen" ;
+    ex:temQuantidadeVendida 77 ;
+    ex:temReceita 5.62696e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/106> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-12 00:00:00" ;
+    ex:temMetaKPI 2.0732e+03 ;
+    ex:temProduto "Seek" ;
+    ex:temQuantidadeVendida 67 ;
+    ex:temReceita 3.513e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/107> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-28 00:00:00" ;
+    ex:temMetaKPI 4.80783e+03 ;
+    ex:temProduto "Our" ;
+    ex:temQuantidadeVendida 97 ;
+    ex:temReceita 9.93722e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/108> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-26 00:00:00" ;
+    ex:temMetaKPI 3.64886e+03 ;
+    ex:temProduto "Participant" ;
+    ex:temQuantidadeVendida 70 ;
+    ex:temReceita 6.44697e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/109> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-22 00:00:00" ;
+    ex:temMetaKPI 2.98631e+03 ;
+    ex:temProduto "Anything" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 5.95699e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/11> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-22 00:00:00" ;
+    ex:temMetaKPI 1.43759e+03 ;
+    ex:temProduto "Not" ;
+    ex:temQuantidadeVendida 86 ;
+    ex:temReceita 6.81703e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/110> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-28 00:00:00" ;
+    ex:temMetaKPI 3.21698e+03 ;
+    ex:temProduto "Line" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 4.31658e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/111> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-28 00:00:00" ;
+    ex:temMetaKPI 4.31004e+03 ;
+    ex:temProduto "Nor" ;
+    ex:temQuantidadeVendida 73 ;
+    ex:temReceita 5.39046e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/112> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-30 00:00:00" ;
+    ex:temMetaKPI 3.51167e+03 ;
+    ex:temProduto "More" ;
+    ex:temQuantidadeVendida 62 ;
+    ex:temReceita 5.86845e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/113> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-04 00:00:00" ;
+    ex:temMetaKPI 4.56452e+03 ;
+    ex:temProduto "Explain" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 7.31119e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/114> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-18 00:00:00" ;
+    ex:temMetaKPI 4.91662e+03 ;
+    ex:temProduto "Player" ;
+    ex:temQuantidadeVendida 30 ;
+    ex:temReceita 7.57457e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/115> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-18 00:00:00" ;
+    ex:temMetaKPI 4.7486e+03 ;
+    ex:temProduto "Need" ;
+    ex:temQuantidadeVendida 93 ;
+    ex:temReceita 9.22384e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/116> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-10 00:00:00" ;
+    ex:temMetaKPI 2.12896e+03 ;
+    ex:temProduto "Music" ;
+    ex:temQuantidadeVendida 7 ;
+    ex:temReceita 4.49004e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/117> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-11-01 00:00:00" ;
+    ex:temMetaKPI 3.30166e+03 ;
+    ex:temProduto "Live" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 9.8928e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/118> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-30 00:00:00" ;
+    ex:temMetaKPI 1.37198e+03 ;
+    ex:temProduto "Add" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 3.54652e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/119> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-10 00:00:00" ;
+    ex:temMetaKPI 2.84401e+03 ;
+    ex:temProduto "There" ;
+    ex:temQuantidadeVendida 89 ;
+    ex:temReceita 1.3305e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/12> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-18 00:00:00" ;
+    ex:temMetaKPI 2.12186e+03 ;
+    ex:temProduto "Manage" ;
+    ex:temQuantidadeVendida 48 ;
+    ex:temReceita 7.56843e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/120> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-17 00:00:00" ;
+    ex:temMetaKPI 3.63341e+03 ;
+    ex:temProduto "Any" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 6.19541e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/121> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-28 00:00:00" ;
+    ex:temMetaKPI 3.66712e+03 ;
+    ex:temProduto "Fire" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 7.63591e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/122> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-04 00:00:00" ;
+    ex:temMetaKPI 4.38549e+03 ;
+    ex:temProduto "Here" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 9.9647e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/123> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-19 00:00:00" ;
+    ex:temMetaKPI 4.19181e+03 ;
+    ex:temProduto "Agree" ;
+    ex:temQuantidadeVendida 84 ;
+    ex:temReceita 9.0063e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/124> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-25 00:00:00" ;
+    ex:temMetaKPI 4.53447e+03 ;
+    ex:temProduto "Be" ;
+    ex:temQuantidadeVendida 74 ;
+    ex:temReceita 6.29215e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/125> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-26 00:00:00" ;
+    ex:temMetaKPI 3.44606e+03 ;
+    ex:temProduto "All" ;
+    ex:temQuantidadeVendida 96 ;
+    ex:temReceita 2.00871e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/126> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-24 00:00:00" ;
+    ex:temMetaKPI 2.08818e+03 ;
+    ex:temProduto "Everything" ;
+    ex:temQuantidadeVendida 85 ;
+    ex:temReceita 5.53239e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/127> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-04 00:00:00" ;
+    ex:temMetaKPI 1.09422e+03 ;
+    ex:temProduto "Ten" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 9.27283e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/128> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-11 00:00:00" ;
+    ex:temMetaKPI 1.88814e+03 ;
+    ex:temProduto "Represent" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 7.97032e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/129> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-22 00:00:00" ;
+    ex:temMetaKPI 3.33616e+03 ;
+    ex:temProduto "Add" ;
+    ex:temQuantidadeVendida 53 ;
+    ex:temReceita 1.4988e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/13> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-13 00:00:00" ;
+    ex:temMetaKPI 2.64509e+03 ;
+    ex:temProduto "Cause" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 2.89178e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/130> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-15 00:00:00" ;
+    ex:temMetaKPI 1.62009e+03 ;
+    ex:temProduto "Form" ;
+    ex:temQuantidadeVendida 89 ;
+    ex:temReceita 4.7629e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/131> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-24 00:00:00" ;
+    ex:temMetaKPI 3.66461e+03 ;
+    ex:temProduto "Analysis" ;
+    ex:temQuantidadeVendida 35 ;
+    ex:temReceita 9.08363e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/132> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-07 00:00:00" ;
+    ex:temMetaKPI 2.28661e+03 ;
+    ex:temProduto "Final" ;
+    ex:temQuantidadeVendida 66 ;
+    ex:temReceita 8.8634e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/133> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-17 00:00:00" ;
+    ex:temMetaKPI 2.05293e+03 ;
+    ex:temProduto "Either" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 7.15094e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/134> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-06 00:00:00" ;
+    ex:temMetaKPI 1.54111e+03 ;
+    ex:temProduto "Process" ;
+    ex:temQuantidadeVendida 31 ;
+    ex:temReceita 6.30523e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/135> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-23 00:00:00" ;
+    ex:temMetaKPI 2.93822e+03 ;
+    ex:temProduto "Send" ;
+    ex:temQuantidadeVendida 48 ;
+    ex:temReceita 7.63897e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/136> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-14 00:00:00" ;
+    ex:temMetaKPI 2.70687e+03 ;
+    ex:temProduto "Music" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 4.16622e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/137> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-26 00:00:00" ;
+    ex:temMetaKPI 2.60637e+03 ;
+    ex:temProduto "Painting" ;
+    ex:temQuantidadeVendida 21 ;
+    ex:temReceita 2.09445e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/138> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-23 00:00:00" ;
+    ex:temMetaKPI 3.09822e+03 ;
+    ex:temProduto "Outside" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 3.39845e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/139> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-27 00:00:00" ;
+    ex:temMetaKPI 3.88524e+03 ;
+    ex:temProduto "Base" ;
+    ex:temQuantidadeVendida 20 ;
+    ex:temReceita 5.4649e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/14> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-24 00:00:00" ;
+    ex:temMetaKPI 4.55386e+03 ;
+    ex:temProduto "Laugh" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 7.1708e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/140> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-03 00:00:00" ;
+    ex:temMetaKPI 4.83319e+03 ;
+    ex:temProduto "Side" ;
+    ex:temQuantidadeVendida 95 ;
+    ex:temReceita 2.75717e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/141> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-15 00:00:00" ;
+    ex:temMetaKPI 3.43227e+03 ;
+    ex:temProduto "Put" ;
+    ex:temQuantidadeVendida 95 ;
+    ex:temReceita 3.1264e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/142> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-05 00:00:00" ;
+    ex:temMetaKPI 2.47138e+03 ;
+    ex:temProduto "Moment" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 7.46741e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/143> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-18 00:00:00" ;
+    ex:temMetaKPI 1.22544e+03 ;
+    ex:temProduto "Help" ;
+    ex:temQuantidadeVendida 8 ;
+    ex:temReceita 2.91151e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/144> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-14 00:00:00" ;
+    ex:temMetaKPI 1.47524e+03 ;
+    ex:temProduto "Specific" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 6.81589e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/145> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-30 00:00:00" ;
+    ex:temMetaKPI 1.56475e+03 ;
+    ex:temProduto "Include" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 5.64352e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/146> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-12 00:00:00" ;
+    ex:temMetaKPI 4.50739e+03 ;
+    ex:temProduto "Interest" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 3.42732e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/147> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-27 00:00:00" ;
+    ex:temMetaKPI 3.37139e+03 ;
+    ex:temProduto "Cost" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 2.95001e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/148> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-09 00:00:00" ;
+    ex:temMetaKPI 2.83931e+03 ;
+    ex:temProduto "Not" ;
+    ex:temQuantidadeVendida 3 ;
+    ex:temReceita 4.36937e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/149> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-14 00:00:00" ;
+    ex:temMetaKPI 1.18325e+03 ;
+    ex:temProduto "Message" ;
+    ex:temQuantidadeVendida 84 ;
+    ex:temReceita 5.47027e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/15> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-05 00:00:00" ;
+    ex:temMetaKPI 3.17987e+03 ;
+    ex:temProduto "Art" ;
+    ex:temQuantidadeVendida 94 ;
+    ex:temReceita 8.58303e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/150> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-26 00:00:00" ;
+    ex:temMetaKPI 2.19494e+03 ;
+    ex:temProduto "Enter" ;
+    ex:temQuantidadeVendida 32 ;
+    ex:temReceita 9.4842e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/151> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-22 00:00:00" ;
+    ex:temMetaKPI 2.57883e+03 ;
+    ex:temProduto "Agency" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 1.52776e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/152> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-26 00:00:00" ;
+    ex:temMetaKPI 1.0417e+03 ;
+    ex:temProduto "Bad" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 8.76893e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/153> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-25 00:00:00" ;
+    ex:temMetaKPI 1.43759e+03 ;
+    ex:temProduto "Start" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 7.16715e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/154> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 1.11496e+03 ;
+    ex:temProduto "Claim" ;
+    ex:temQuantidadeVendida 92 ;
+    ex:temReceita 7.41396e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/155> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 1.60048e+03 ;
+    ex:temProduto "Clearly" ;
+    ex:temQuantidadeVendida 66 ;
+    ex:temReceita 4.03401e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/156> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-21 00:00:00" ;
+    ex:temMetaKPI 2.59019e+03 ;
+    ex:temProduto "Economy" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 9.84841e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/157> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-12 00:00:00" ;
+    ex:temMetaKPI 3.36629e+03 ;
+    ex:temProduto "Executive" ;
+    ex:temQuantidadeVendida 26 ;
+    ex:temReceita 4.66457e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/158> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-01 00:00:00" ;
+    ex:temMetaKPI 4.00308e+03 ;
+    ex:temProduto "Police" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 3.05672e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/159> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-26 00:00:00" ;
+    ex:temMetaKPI 3.11956e+03 ;
+    ex:temProduto "Participant" ;
+    ex:temQuantidadeVendida 76 ;
+    ex:temReceita 6.49956e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/16> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-05 00:00:00" ;
+    ex:temMetaKPI 2.18022e+03 ;
+    ex:temProduto "Human" ;
+    ex:temQuantidadeVendida 25 ;
+    ex:temReceita 5.88124e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/160> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-18 00:00:00" ;
+    ex:temMetaKPI 3.27912e+03 ;
+    ex:temProduto "Around" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 6.0156e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/161> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-31 00:00:00" ;
+    ex:temMetaKPI 2.03607e+03 ;
+    ex:temProduto "Never" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 8.58879e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/162> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-06 00:00:00" ;
+    ex:temMetaKPI 2.36066e+03 ;
+    ex:temProduto "Seat" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 2.97857e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/163> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-03 00:00:00" ;
+    ex:temMetaKPI 2.71655e+03 ;
+    ex:temProduto "Detail" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 8.11849e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/164> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-14 00:00:00" ;
+    ex:temMetaKPI 4.02608e+03 ;
+    ex:temProduto "Listen" ;
+    ex:temQuantidadeVendida 2 ;
+    ex:temReceita 6.7111e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/165> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-26 00:00:00" ;
+    ex:temMetaKPI 1.81301e+03 ;
+    ex:temProduto "Strategy" ;
+    ex:temQuantidadeVendida 60 ;
+    ex:temReceita 7.55395e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/166> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-28 00:00:00" ;
+    ex:temMetaKPI 3.10283e+03 ;
+    ex:temProduto "Rate" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 6.97021e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/167> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-20 00:00:00" ;
+    ex:temMetaKPI 3.71871e+03 ;
+    ex:temProduto "Natural" ;
+    ex:temQuantidadeVendida 96 ;
+    ex:temReceita 1.04775e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/168> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-07 00:00:00" ;
+    ex:temMetaKPI 3.05948e+03 ;
+    ex:temProduto "Mention" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 8.28481e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/169> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-25 00:00:00" ;
+    ex:temMetaKPI 2.0628e+03 ;
+    ex:temProduto "Thus" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 9.58746e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/17> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-21 00:00:00" ;
+    ex:temMetaKPI 3.3222e+03 ;
+    ex:temProduto "Price" ;
+    ex:temQuantidadeVendida 51 ;
+    ex:temReceita 9.93966e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/170> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-08 00:00:00" ;
+    ex:temMetaKPI 4.26566e+03 ;
+    ex:temProduto "Main" ;
+    ex:temQuantidadeVendida 17 ;
+    ex:temReceita 1.52618e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/171> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-25 00:00:00" ;
+    ex:temMetaKPI 2.65535e+03 ;
+    ex:temProduto "House" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 9.76248e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/172> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-22 00:00:00" ;
+    ex:temMetaKPI 4.84697e+03 ;
+    ex:temProduto "Southern" ;
+    ex:temQuantidadeVendida 45 ;
+    ex:temReceita 9.13732e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/173> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-08 00:00:00" ;
+    ex:temMetaKPI 1.1158e+03 ;
+    ex:temProduto "Two" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 2.28621e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/174> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-30 00:00:00" ;
+    ex:temMetaKPI 2.42776e+03 ;
+    ex:temProduto "Watch" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 1.19908e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/175> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-19 00:00:00" ;
+    ex:temMetaKPI 4.76442e+03 ;
+    ex:temProduto "Check" ;
+    ex:temQuantidadeVendida 17 ;
+    ex:temReceita 5.54852e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/176> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-05 00:00:00" ;
+    ex:temMetaKPI 2.11847e+03 ;
+    ex:temProduto "Build" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 7.83818e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/177> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-17 00:00:00" ;
+    ex:temMetaKPI 2.71271e+03 ;
+    ex:temProduto "History" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 6.43813e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/178> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-29 00:00:00" ;
+    ex:temMetaKPI 1.66528e+03 ;
+    ex:temProduto "Central" ;
+    ex:temQuantidadeVendida 53 ;
+    ex:temReceita 6.16503e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/179> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-06 00:00:00" ;
+    ex:temMetaKPI 4.81348e+03 ;
+    ex:temProduto "Project" ;
+    ex:temQuantidadeVendida 13 ;
+    ex:temReceita 3.29769e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/18> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-24 00:00:00" ;
+    ex:temMetaKPI 3.3833e+03 ;
+    ex:temProduto "Available" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 3.33336e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/180> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-14 00:00:00" ;
+    ex:temMetaKPI 4.30857e+03 ;
+    ex:temProduto "Radio" ;
+    ex:temQuantidadeVendida 92 ;
+    ex:temReceita 8.10722e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/181> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-05 00:00:00" ;
+    ex:temMetaKPI 2.32821e+03 ;
+    ex:temProduto "Market" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 7.23058e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/182> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-24 00:00:00" ;
+    ex:temMetaKPI 1.25881e+03 ;
+    ex:temProduto "Today" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 1.88778e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/183> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-29 00:00:00" ;
+    ex:temMetaKPI 3.93217e+03 ;
+    ex:temProduto "Best" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 6.61098e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/184> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-04 00:00:00" ;
+    ex:temMetaKPI 1.17436e+03 ;
+    ex:temProduto "Foreign" ;
+    ex:temQuantidadeVendida 71 ;
+    ex:temReceita 3.01587e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/185> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-15 00:00:00" ;
+    ex:temMetaKPI 2.99928e+03 ;
+    ex:temProduto "Commercial" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 8.35114e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/186> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-11 00:00:00" ;
+    ex:temMetaKPI 3.98592e+03 ;
+    ex:temProduto "Avoid" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 9.10975e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/187> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-11-01 00:00:00" ;
+    ex:temMetaKPI 1.3353e+03 ;
+    ex:temProduto "Contain" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 4.63621e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/188> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-19 00:00:00" ;
+    ex:temMetaKPI 4.78445e+03 ;
+    ex:temProduto "Understand" ;
+    ex:temQuantidadeVendida 76 ;
+    ex:temReceita 9.02616e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/189> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-18 00:00:00" ;
+    ex:temMetaKPI 1.92504e+03 ;
+    ex:temProduto "Fact" ;
+    ex:temQuantidadeVendida 76 ;
+    ex:temReceita 4.90482e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/19> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-06 00:00:00" ;
+    ex:temMetaKPI 3.12933e+03 ;
+    ex:temProduto "Organization" ;
+    ex:temQuantidadeVendida 48 ;
+    ex:temReceita 5.63516e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/190> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-12 00:00:00" ;
+    ex:temMetaKPI 3.536e+03 ;
+    ex:temProduto "Challenge" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 8.8528e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/191> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-28 00:00:00" ;
+    ex:temMetaKPI 4.80522e+03 ;
+    ex:temProduto "Anything" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 1.61618e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/192> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-26 00:00:00" ;
+    ex:temMetaKPI 2.12564e+03 ;
+    ex:temProduto "Blood" ;
+    ex:temQuantidadeVendida 8 ;
+    ex:temReceita 5.50854e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/193> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-23 00:00:00" ;
+    ex:temMetaKPI 4.8342e+03 ;
+    ex:temProduto "Spring" ;
+    ex:temQuantidadeVendida 39 ;
+    ex:temReceita 7.4981e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/194> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-14 00:00:00" ;
+    ex:temMetaKPI 4.7778e+03 ;
+    ex:temProduto "Kind" ;
+    ex:temQuantidadeVendida 36 ;
+    ex:temReceita 2.72108e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/195> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-29 00:00:00" ;
+    ex:temMetaKPI 4.96888e+03 ;
+    ex:temProduto "Wind" ;
+    ex:temQuantidadeVendida 42 ;
+    ex:temReceita 8.19344e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/196> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-25 00:00:00" ;
+    ex:temMetaKPI 4.59217e+03 ;
+    ex:temProduto "White" ;
+    ex:temQuantidadeVendida 84 ;
+    ex:temReceita 8.35715e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/197> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 3.17749e+03 ;
+    ex:temProduto "Federal" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 4.25013e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/198> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-09 00:00:00" ;
+    ex:temMetaKPI 4.61717e+03 ;
+    ex:temProduto "On" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 5.28918e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/199> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-23 00:00:00" ;
+    ex:temMetaKPI 3.98887e+03 ;
+    ex:temProduto "Itself" ;
+    ex:temQuantidadeVendida 96 ;
+    ex:temReceita 8.54204e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/2> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-07 00:00:00" ;
+    ex:temMetaKPI 1.78759e+03 ;
+    ex:temProduto "Decide" ;
+    ex:temQuantidadeVendida 98 ;
+    ex:temReceita 4.79583e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/20> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-08 00:00:00" ;
+    ex:temMetaKPI 2.17424e+03 ;
+    ex:temProduto "Out" ;
+    ex:temQuantidadeVendida 3 ;
+    ex:temReceita 3.4427e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/200> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-02 00:00:00" ;
+    ex:temMetaKPI 2.01646e+03 ;
+    ex:temProduto "Alone" ;
+    ex:temQuantidadeVendida 48 ;
+    ex:temReceita 5.80397e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/201> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-16 00:00:00" ;
+    ex:temMetaKPI 4.16086e+03 ;
+    ex:temProduto "Career" ;
+    ex:temQuantidadeVendida 32 ;
+    ex:temReceita 5.10301e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/202> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-15 00:00:00" ;
+    ex:temMetaKPI 1.26421e+03 ;
+    ex:temProduto "Boy" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 5.4851e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/203> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-21 00:00:00" ;
+    ex:temMetaKPI 3.42665e+03 ;
+    ex:temProduto "Myself" ;
+    ex:temQuantidadeVendida 8 ;
+    ex:temReceita 6.82685e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/204> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-20 00:00:00" ;
+    ex:temMetaKPI 3.84464e+03 ;
+    ex:temProduto "Tree" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 2.63756e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/205> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-16 00:00:00" ;
+    ex:temMetaKPI 3.06329e+03 ;
+    ex:temProduto "Challenge" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 8.5623e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/206> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-18 00:00:00" ;
+    ex:temMetaKPI 4.66389e+03 ;
+    ex:temProduto "Stock" ;
+    ex:temQuantidadeVendida 67 ;
+    ex:temReceita 2.53296e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/207> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-10 00:00:00" ;
+    ex:temMetaKPI 1.46583e+03 ;
+    ex:temProduto "Present" ;
+    ex:temQuantidadeVendida 7 ;
+    ex:temReceita 7.31495e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/208> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-23 00:00:00" ;
+    ex:temMetaKPI 3.681e+03 ;
+    ex:temProduto "Beat" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 9.64689e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/209> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-25 00:00:00" ;
+    ex:temMetaKPI 2.17825e+03 ;
+    ex:temProduto "Hair" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 7.03863e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/21> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-08 00:00:00" ;
+    ex:temMetaKPI 3.01303e+03 ;
+    ex:temProduto "Read" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 7.41277e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/210> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-21 00:00:00" ;
+    ex:temMetaKPI 4.12835e+03 ;
+    ex:temProduto "Science" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 8.46997e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/211> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-22 00:00:00" ;
+    ex:temMetaKPI 2.64841e+03 ;
+    ex:temProduto "Teacher" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 9.55863e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/212> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-19 00:00:00" ;
+    ex:temMetaKPI 2.72148e+03 ;
+    ex:temProduto "Such" ;
+    ex:temQuantidadeVendida 94 ;
+    ex:temReceita 2.36478e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/213> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-22 00:00:00" ;
+    ex:temMetaKPI 3.29375e+03 ;
+    ex:temProduto "Finish" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 6.42081e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/214> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-20 00:00:00" ;
+    ex:temMetaKPI 1.65175e+03 ;
+    ex:temProduto "Lay" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 8.02101e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/215> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-02 00:00:00" ;
+    ex:temMetaKPI 2.67215e+03 ;
+    ex:temProduto "Image" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 4.96059e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/216> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-19 00:00:00" ;
+    ex:temMetaKPI 3.01823e+03 ;
+    ex:temProduto "Chance" ;
+    ex:temQuantidadeVendida 89 ;
+    ex:temReceita 5.57416e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/217> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-03 00:00:00" ;
+    ex:temMetaKPI 2.3739e+03 ;
+    ex:temProduto "Wish" ;
+    ex:temQuantidadeVendida 59 ;
+    ex:temReceita 1.79553e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/218> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-26 00:00:00" ;
+    ex:temMetaKPI 4.11831e+03 ;
+    ex:temProduto "Speech" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 6.98676e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/219> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-20 00:00:00" ;
+    ex:temMetaKPI 4.63907e+03 ;
+    ex:temProduto "Raise" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 8.65783e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/22> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-18 00:00:00" ;
+    ex:temMetaKPI 4.18419e+03 ;
+    ex:temProduto "Down" ;
+    ex:temQuantidadeVendida 19 ;
+    ex:temReceita 6.24185e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/220> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-19 00:00:00" ;
+    ex:temMetaKPI 3.19964e+03 ;
+    ex:temProduto "Audience" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 9.18006e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/221> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-19 00:00:00" ;
+    ex:temMetaKPI 3.10259e+03 ;
+    ex:temProduto "Behind" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 9.60478e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/222> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-03 00:00:00" ;
+    ex:temMetaKPI 2.3105e+03 ;
+    ex:temProduto "Huge" ;
+    ex:temQuantidadeVendida 11 ;
+    ex:temReceita 8.16493e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/223> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-04 00:00:00" ;
+    ex:temMetaKPI 4.12296e+03 ;
+    ex:temProduto "Clear" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 4.95188e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/224> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-08 00:00:00" ;
+    ex:temMetaKPI 1.83292e+03 ;
+    ex:temProduto "Reduce" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 8.94278e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/225> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-03 00:00:00" ;
+    ex:temMetaKPI 3.95471e+03 ;
+    ex:temProduto "Conference" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 7.48158e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/226> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-09 00:00:00" ;
+    ex:temMetaKPI 2.69583e+03 ;
+    ex:temProduto "Majority" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 2.44213e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/227> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-20 00:00:00" ;
+    ex:temMetaKPI 3.3532e+03 ;
+    ex:temProduto "Education" ;
+    ex:temQuantidadeVendida 76 ;
+    ex:temReceita 8.7508e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/228> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-20 00:00:00" ;
+    ex:temMetaKPI 2.26871e+03 ;
+    ex:temProduto "Whether" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 7.11327e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/229> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-11 00:00:00" ;
+    ex:temMetaKPI 4.24989e+03 ;
+    ex:temProduto "Teacher" ;
+    ex:temQuantidadeVendida 77 ;
+    ex:temReceita 1.22925e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/23> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-31 00:00:00" ;
+    ex:temMetaKPI 1.44367e+03 ;
+    ex:temProduto "Politics" ;
+    ex:temQuantidadeVendida 30 ;
+    ex:temReceita 2.73148e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/230> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-17 00:00:00" ;
+    ex:temMetaKPI 3.13773e+03 ;
+    ex:temProduto "Door" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 8.35493e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/231> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-17 00:00:00" ;
+    ex:temMetaKPI 2.50755e+03 ;
+    ex:temProduto "Measure" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 2.66224e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/232> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-07 00:00:00" ;
+    ex:temMetaKPI 4.07879e+03 ;
+    ex:temProduto "Small" ;
+    ex:temQuantidadeVendida 59 ;
+    ex:temReceita 8.91004e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/233> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-01 00:00:00" ;
+    ex:temMetaKPI 2.18428e+03 ;
+    ex:temProduto "Take" ;
+    ex:temQuantidadeVendida 1 ;
+    ex:temReceita 4.6309e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/234> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-24 00:00:00" ;
+    ex:temMetaKPI 2.82878e+03 ;
+    ex:temProduto "Allow" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 6.9565e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/235> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-19 00:00:00" ;
+    ex:temMetaKPI 2.79408e+03 ;
+    ex:temProduto "Source" ;
+    ex:temQuantidadeVendida 35 ;
+    ex:temReceita 4.69e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/236> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-20 00:00:00" ;
+    ex:temMetaKPI 2.20418e+03 ;
+    ex:temProduto "Office" ;
+    ex:temQuantidadeVendida 50 ;
+    ex:temReceita 1.23969e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/237> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-01 00:00:00" ;
+    ex:temMetaKPI 4.85048e+03 ;
+    ex:temProduto "Development" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 7.45891e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/238> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-23 00:00:00" ;
+    ex:temMetaKPI 3.95229e+03 ;
+    ex:temProduto "Resource" ;
+    ex:temQuantidadeVendida 13 ;
+    ex:temReceita 5.34267e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/239> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-04 00:00:00" ;
+    ex:temMetaKPI 3.27723e+03 ;
+    ex:temProduto "Deep" ;
+    ex:temQuantidadeVendida 17 ;
+    ex:temReceita 4.97247e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/24> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-16 00:00:00" ;
+    ex:temMetaKPI 3.3595e+03 ;
+    ex:temProduto "Local" ;
+    ex:temQuantidadeVendida 31 ;
+    ex:temReceita 8.3577e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/240> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-18 00:00:00" ;
+    ex:temMetaKPI 2.99056e+03 ;
+    ex:temProduto "So" ;
+    ex:temQuantidadeVendida 96 ;
+    ex:temReceita 2.0422e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/241> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-27 00:00:00" ;
+    ex:temMetaKPI 1.6221e+03 ;
+    ex:temProduto "Face" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 6.52139e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/242> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-19 00:00:00" ;
+    ex:temMetaKPI 1.6825e+03 ;
+    ex:temProduto "Too" ;
+    ex:temQuantidadeVendida 60 ;
+    ex:temReceita 6.5485e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/243> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-01 00:00:00" ;
+    ex:temMetaKPI 4.99439e+03 ;
+    ex:temProduto "Question" ;
+    ex:temQuantidadeVendida 2 ;
+    ex:temReceita 3.80118e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/244> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-01 00:00:00" ;
+    ex:temMetaKPI 1.89713e+03 ;
+    ex:temProduto "Between" ;
+    ex:temQuantidadeVendida 73 ;
+    ex:temReceita 5.8807e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/245> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-09 00:00:00" ;
+    ex:temMetaKPI 1.03704e+03 ;
+    ex:temProduto "Question" ;
+    ex:temQuantidadeVendida 75 ;
+    ex:temReceita 7.49626e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/246> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-15 00:00:00" ;
+    ex:temMetaKPI 1.70568e+03 ;
+    ex:temProduto "Big" ;
+    ex:temQuantidadeVendida 58 ;
+    ex:temReceita 1.22962e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/247> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-24 00:00:00" ;
+    ex:temMetaKPI 1.80494e+03 ;
+    ex:temProduto "Compare" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 6.85434e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/248> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-20 00:00:00" ;
+    ex:temMetaKPI 2.72567e+03 ;
+    ex:temProduto "Item" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 4.07461e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/249> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-06 00:00:00" ;
+    ex:temMetaKPI 2.21559e+03 ;
+    ex:temProduto "View" ;
+    ex:temQuantidadeVendida 69 ;
+    ex:temReceita 1.27505e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/25> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-22 00:00:00" ;
+    ex:temMetaKPI 3.64888e+03 ;
+    ex:temProduto "Base" ;
+    ex:temQuantidadeVendida 7 ;
+    ex:temReceita 1.86655e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/250> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-24 00:00:00" ;
+    ex:temMetaKPI 3.29118e+03 ;
+    ex:temProduto "Dinner" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 1.53326e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/251> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-17 00:00:00" ;
+    ex:temMetaKPI 3.37383e+03 ;
+    ex:temProduto "Hit" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 4.84013e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/252> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 3.91526e+03 ;
+    ex:temProduto "Full" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 8.73145e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/253> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-08 00:00:00" ;
+    ex:temMetaKPI 2.48045e+03 ;
+    ex:temProduto "Eight" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 6.52229e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/254> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-30 00:00:00" ;
+    ex:temMetaKPI 3.06337e+03 ;
+    ex:temProduto "Parent" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 1.9756e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/255> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-23 00:00:00" ;
+    ex:temMetaKPI 1.62085e+03 ;
+    ex:temProduto "Assume" ;
+    ex:temQuantidadeVendida 59 ;
+    ex:temReceita 4.38267e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/256> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-31 00:00:00" ;
+    ex:temMetaKPI 2.26612e+03 ;
+    ex:temProduto "Several" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 9.24734e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/257> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-04 00:00:00" ;
+    ex:temMetaKPI 4.35298e+03 ;
+    ex:temProduto "Allow" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 5.43145e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/258> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-05 00:00:00" ;
+    ex:temMetaKPI 1.79057e+03 ;
+    ex:temProduto "Area" ;
+    ex:temQuantidadeVendida 26 ;
+    ex:temReceita 1.73426e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/259> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-31 00:00:00" ;
+    ex:temMetaKPI 4.17457e+03 ;
+    ex:temProduto "Pressure" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 3.77838e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/26> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-13 00:00:00" ;
+    ex:temMetaKPI 4.16036e+03 ;
+    ex:temProduto "World" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 4.08781e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/260> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-11 00:00:00" ;
+    ex:temMetaKPI 2.53202e+03 ;
+    ex:temProduto "Push" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 5.49494e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/261> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-15 00:00:00" ;
+    ex:temMetaKPI 2.38802e+03 ;
+    ex:temProduto "Use" ;
+    ex:temQuantidadeVendida 75 ;
+    ex:temReceita 6.81273e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/262> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-17 00:00:00" ;
+    ex:temMetaKPI 1.41943e+03 ;
+    ex:temProduto "Argue" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 5.09111e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/263> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-08 00:00:00" ;
+    ex:temMetaKPI 1.74877e+03 ;
+    ex:temProduto "Difference" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 7.2321e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/264> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-13 00:00:00" ;
+    ex:temMetaKPI 3.42086e+03 ;
+    ex:temProduto "Television" ;
+    ex:temQuantidadeVendida 11 ;
+    ex:temReceita 7.74058e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/265> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-29 00:00:00" ;
+    ex:temMetaKPI 3.27933e+03 ;
+    ex:temProduto "Law" ;
+    ex:temQuantidadeVendida 11 ;
+    ex:temReceita 8.89682e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/266> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-24 00:00:00" ;
+    ex:temMetaKPI 4.85121e+03 ;
+    ex:temProduto "Opportunity" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 1.16105e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/267> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-18 00:00:00" ;
+    ex:temMetaKPI 2.41206e+03 ;
+    ex:temProduto "Do" ;
+    ex:temQuantidadeVendida 38 ;
+    ex:temReceita 3.19647e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/268> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-24 00:00:00" ;
+    ex:temMetaKPI 4.14427e+03 ;
+    ex:temProduto "Positive" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 8.8854e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/269> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-06 00:00:00" ;
+    ex:temMetaKPI 3.73778e+03 ;
+    ex:temProduto "Rate" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 3.70061e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/27> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-25 00:00:00" ;
+    ex:temMetaKPI 4.92089e+03 ;
+    ex:temProduto "During" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 4.52823e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/270> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-26 00:00:00" ;
+    ex:temMetaKPI 1.01693e+03 ;
+    ex:temProduto "Person" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 2.62015e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/271> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-03 00:00:00" ;
+    ex:temMetaKPI 1.41439e+03 ;
+    ex:temProduto "Teacher" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 8.64862e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/272> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-20 00:00:00" ;
+    ex:temMetaKPI 3.55901e+03 ;
+    ex:temProduto "Back" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 9.48205e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/273> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-04 00:00:00" ;
+    ex:temMetaKPI 2.61352e+03 ;
+    ex:temProduto "Activity" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 6.94654e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/274> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-26 00:00:00" ;
+    ex:temMetaKPI 3.74547e+03 ;
+    ex:temProduto "Risk" ;
+    ex:temQuantidadeVendida 89 ;
+    ex:temReceita 9.46429e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/275> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 1.21881e+03 ;
+    ex:temProduto "Letter" ;
+    ex:temQuantidadeVendida 60 ;
+    ex:temReceita 4.14949e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/276> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-05 00:00:00" ;
+    ex:temMetaKPI 1.9961e+03 ;
+    ex:temProduto "Major" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 8.51946e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/277> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-10 00:00:00" ;
+    ex:temMetaKPI 1.45151e+03 ;
+    ex:temProduto "Cut" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 3.54222e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/278> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-07 00:00:00" ;
+    ex:temMetaKPI 3.4491e+03 ;
+    ex:temProduto "Movement" ;
+    ex:temQuantidadeVendida 99 ;
+    ex:temReceita 9.46883e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/279> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-06 00:00:00" ;
+    ex:temMetaKPI 2.49529e+03 ;
+    ex:temProduto "Next" ;
+    ex:temQuantidadeVendida 45 ;
+    ex:temReceita 6.2186e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/28> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-10 00:00:00" ;
+    ex:temMetaKPI 1.90333e+03 ;
+    ex:temProduto "Require" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 7.23506e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/280> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-11 00:00:00" ;
+    ex:temMetaKPI 4.99785e+03 ;
+    ex:temProduto "Newspaper" ;
+    ex:temQuantidadeVendida 48 ;
+    ex:temReceita 7.41018e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/281> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-13 00:00:00" ;
+    ex:temMetaKPI 2.69284e+03 ;
+    ex:temProduto "Perform" ;
+    ex:temQuantidadeVendida 42 ;
+    ex:temReceita 8.93369e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/282> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-09 00:00:00" ;
+    ex:temMetaKPI 1.06906e+03 ;
+    ex:temProduto "Thing" ;
+    ex:temQuantidadeVendida 60 ;
+    ex:temReceita 2.45599e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/283> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-02 00:00:00" ;
+    ex:temMetaKPI 2.13998e+03 ;
+    ex:temProduto "Note" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 6.58424e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/284> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-27 00:00:00" ;
+    ex:temMetaKPI 3.44135e+03 ;
+    ex:temProduto "Represent" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 9.731e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/285> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-23 00:00:00" ;
+    ex:temMetaKPI 1.66564e+03 ;
+    ex:temProduto "With" ;
+    ex:temQuantidadeVendida 77 ;
+    ex:temReceita 2.3637e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/286> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-12 00:00:00" ;
+    ex:temMetaKPI 4.17952e+03 ;
+    ex:temProduto "Could" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 1.40132e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/287> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-11 00:00:00" ;
+    ex:temMetaKPI 1.70974e+03 ;
+    ex:temProduto "High" ;
+    ex:temQuantidadeVendida 70 ;
+    ex:temReceita 1.60404e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/288> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-06 00:00:00" ;
+    ex:temMetaKPI 2.32952e+03 ;
+    ex:temProduto "Talk" ;
+    ex:temQuantidadeVendida 95 ;
+    ex:temReceita 1.99127e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/289> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-06 00:00:00" ;
+    ex:temMetaKPI 4.59542e+03 ;
+    ex:temProduto "Alone" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 3.18986e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/29> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-30 00:00:00" ;
+    ex:temMetaKPI 4.34881e+03 ;
+    ex:temProduto "Meeting" ;
+    ex:temQuantidadeVendida 58 ;
+    ex:temReceita 2.2821e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/290> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-14 00:00:00" ;
+    ex:temMetaKPI 2.93386e+03 ;
+    ex:temProduto "Think" ;
+    ex:temQuantidadeVendida 25 ;
+    ex:temReceita 2.65487e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/291> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-11 00:00:00" ;
+    ex:temMetaKPI 1.46984e+03 ;
+    ex:temProduto "Figure" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 2.1406e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/292> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-14 00:00:00" ;
+    ex:temMetaKPI 3.57099e+03 ;
+    ex:temProduto "Whom" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 2.5672e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/293> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-16 00:00:00" ;
+    ex:temMetaKPI 3.1456e+03 ;
+    ex:temProduto "Item" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 6.77363e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/294> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-09 00:00:00" ;
+    ex:temMetaKPI 3.69715e+03 ;
+    ex:temProduto "Effect" ;
+    ex:temQuantidadeVendida 75 ;
+    ex:temReceita 4.53988e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/295> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-11 00:00:00" ;
+    ex:temMetaKPI 2.19907e+03 ;
+    ex:temProduto "Sometimes" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 1.39799e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/296> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 2.65876e+03 ;
+    ex:temProduto "War" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 1.9358e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/297> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-20 00:00:00" ;
+    ex:temMetaKPI 2.42685e+03 ;
+    ex:temProduto "Employee" ;
+    ex:temQuantidadeVendida 73 ;
+    ex:temReceita 6.60591e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/298> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-22 00:00:00" ;
+    ex:temMetaKPI 3.79775e+03 ;
+    ex:temProduto "Shoulder" ;
+    ex:temQuantidadeVendida 3 ;
+    ex:temReceita 1.05513e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/299> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-17 00:00:00" ;
+    ex:temMetaKPI 3.47933e+03 ;
+    ex:temProduto "Water" ;
+    ex:temQuantidadeVendida 93 ;
+    ex:temReceita 8.54313e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/3> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-12 00:00:00" ;
+    ex:temMetaKPI 1.85699e+03 ;
+    ex:temProduto "Media" ;
+    ex:temQuantidadeVendida 61 ;
+    ex:temReceita 7.47294e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/30> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-21 00:00:00" ;
+    ex:temMetaKPI 4.34404e+03 ;
+    ex:temProduto "Fund" ;
+    ex:temQuantidadeVendida 26 ;
+    ex:temReceita 4.62853e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/300> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-28 00:00:00" ;
+    ex:temMetaKPI 4.04916e+03 ;
+    ex:temProduto "Party" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 6.86961e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/301> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-27 00:00:00" ;
+    ex:temMetaKPI 4.18296e+03 ;
+    ex:temProduto "Nice" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 2.63467e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/302> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-18 00:00:00" ;
+    ex:temMetaKPI 3.50414e+03 ;
+    ex:temProduto "Tree" ;
+    ex:temQuantidadeVendida 69 ;
+    ex:temReceita 4.16689e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/303> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-16 00:00:00" ;
+    ex:temMetaKPI 2.54247e+03 ;
+    ex:temProduto "East" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 1.34188e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/304> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-13 00:00:00" ;
+    ex:temMetaKPI 3.42012e+03 ;
+    ex:temProduto "After" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 7.96443e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/305> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-05 00:00:00" ;
+    ex:temMetaKPI 3.02336e+03 ;
+    ex:temProduto "Single" ;
+    ex:temQuantidadeVendida 40 ;
+    ex:temReceita 8.41694e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/306> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-11-01 00:00:00" ;
+    ex:temMetaKPI 1.74655e+03 ;
+    ex:temProduto "Meeting" ;
+    ex:temQuantidadeVendida 98 ;
+    ex:temReceita 1.67355e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/307> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-27 00:00:00" ;
+    ex:temMetaKPI 3.35564e+03 ;
+    ex:temProduto "Information" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 7.8401e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/308> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-05 00:00:00" ;
+    ex:temMetaKPI 1.06857e+03 ;
+    ex:temProduto "Perform" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 2.16664e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/309> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-27 00:00:00" ;
+    ex:temMetaKPI 3.22198e+03 ;
+    ex:temProduto "House" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 7.37442e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/31> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-11 00:00:00" ;
+    ex:temMetaKPI 3.87432e+03 ;
+    ex:temProduto "Education" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 9.9177e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/310> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-07 00:00:00" ;
+    ex:temMetaKPI 2.33006e+03 ;
+    ex:temProduto "Sense" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 1.42737e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/311> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-12 00:00:00" ;
+    ex:temMetaKPI 3.03889e+03 ;
+    ex:temProduto "According" ;
+    ex:temQuantidadeVendida 20 ;
+    ex:temReceita 5.29677e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/312> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-23 00:00:00" ;
+    ex:temMetaKPI 3.83834e+03 ;
+    ex:temProduto "Five" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 2.15837e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/313> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 3.76962e+03 ;
+    ex:temProduto "Red" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 7.4986e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/314> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-21 00:00:00" ;
+    ex:temMetaKPI 1.80285e+03 ;
+    ex:temProduto "Ask" ;
+    ex:temQuantidadeVendida 71 ;
+    ex:temReceita 6.51983e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/315> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-06 00:00:00" ;
+    ex:temMetaKPI 3.90329e+03 ;
+    ex:temProduto "Expert" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 5.43869e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/316> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-22 00:00:00" ;
+    ex:temMetaKPI 4.63393e+03 ;
+    ex:temProduto "School" ;
+    ex:temQuantidadeVendida 89 ;
+    ex:temReceita 7.50076e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/317> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-06 00:00:00" ;
+    ex:temMetaKPI 4.34041e+03 ;
+    ex:temProduto "Final" ;
+    ex:temQuantidadeVendida 1 ;
+    ex:temReceita 1.08487e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/318> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-24 00:00:00" ;
+    ex:temMetaKPI 2.42892e+03 ;
+    ex:temProduto "Consider" ;
+    ex:temQuantidadeVendida 69 ;
+    ex:temReceita 7.17304e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/319> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-11 00:00:00" ;
+    ex:temMetaKPI 2.22208e+03 ;
+    ex:temProduto "Professor" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 1.4282e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/32> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-23 00:00:00" ;
+    ex:temMetaKPI 1.99145e+03 ;
+    ex:temProduto "I" ;
+    ex:temQuantidadeVendida 7 ;
+    ex:temReceita 8.22913e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/320> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-18 00:00:00" ;
+    ex:temMetaKPI 1.87655e+03 ;
+    ex:temProduto "Soldier" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 3.38653e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/321> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-22 00:00:00" ;
+    ex:temMetaKPI 1.42657e+03 ;
+    ex:temProduto "Evidence" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 1.61099e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/322> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-03 00:00:00" ;
+    ex:temMetaKPI 3.17069e+03 ;
+    ex:temProduto "Second" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 3.83224e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/323> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-23 00:00:00" ;
+    ex:temMetaKPI 4.38262e+03 ;
+    ex:temProduto "Language" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 5.41672e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/324> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-01 00:00:00" ;
+    ex:temMetaKPI 3.47217e+03 ;
+    ex:temProduto "Science" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 9.22125e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/325> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-17 00:00:00" ;
+    ex:temMetaKPI 4.74353e+03 ;
+    ex:temProduto "Expect" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 5.54388e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/326> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 4.09846e+03 ;
+    ex:temProduto "Deal" ;
+    ex:temQuantidadeVendida 3 ;
+    ex:temReceita 3.66723e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/327> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-24 00:00:00" ;
+    ex:temMetaKPI 4.43658e+03 ;
+    ex:temProduto "Career" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 4.9041e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/328> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-05 00:00:00" ;
+    ex:temMetaKPI 3.70591e+03 ;
+    ex:temProduto "Gas" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 4.08184e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/329> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-28 00:00:00" ;
+    ex:temMetaKPI 4.34558e+03 ;
+    ex:temProduto "Certain" ;
+    ex:temQuantidadeVendida 92 ;
+    ex:temReceita 8.45981e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/33> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-19 00:00:00" ;
+    ex:temMetaKPI 1.13337e+03 ;
+    ex:temProduto "Shoulder" ;
+    ex:temQuantidadeVendida 19 ;
+    ex:temReceita 6.9721e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/330> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-21 00:00:00" ;
+    ex:temMetaKPI 3.86849e+03 ;
+    ex:temProduto "Hot" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 7.09359e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/331> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-27 00:00:00" ;
+    ex:temMetaKPI 2.8149e+03 ;
+    ex:temProduto "Beautiful" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 7.63221e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/332> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-02 00:00:00" ;
+    ex:temMetaKPI 4.38247e+03 ;
+    ex:temProduto "Story" ;
+    ex:temQuantidadeVendida 35 ;
+    ex:temReceita 6.40831e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/333> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-30 00:00:00" ;
+    ex:temMetaKPI 1.04745e+03 ;
+    ex:temProduto "Trouble" ;
+    ex:temQuantidadeVendida 74 ;
+    ex:temReceita 2.74913e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/334> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-19 00:00:00" ;
+    ex:temMetaKPI 2.09435e+03 ;
+    ex:temProduto "Career" ;
+    ex:temQuantidadeVendida 88 ;
+    ex:temReceita 4.70515e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/335> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-26 00:00:00" ;
+    ex:temMetaKPI 4.50422e+03 ;
+    ex:temProduto "Learn" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 3.8291e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/336> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-11 00:00:00" ;
+    ex:temMetaKPI 4.93807e+03 ;
+    ex:temProduto "Development" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 7.01021e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/337> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-01 00:00:00" ;
+    ex:temMetaKPI 4.98846e+03 ;
+    ex:temProduto "More" ;
+    ex:temQuantidadeVendida 99 ;
+    ex:temReceita 4.05733e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/338> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-26 00:00:00" ;
+    ex:temMetaKPI 1.21473e+03 ;
+    ex:temProduto "Her" ;
+    ex:temQuantidadeVendida 40 ;
+    ex:temReceita 2.82223e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/339> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-09 00:00:00" ;
+    ex:temMetaKPI 2.33902e+03 ;
+    ex:temProduto "Home" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 4.4955e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/34> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-06 00:00:00" ;
+    ex:temMetaKPI 3.35817e+03 ;
+    ex:temProduto "Network" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 9.34213e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/340> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-15 00:00:00" ;
+    ex:temMetaKPI 4.75389e+03 ;
+    ex:temProduto "Cultural" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 6.23617e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/341> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-26 00:00:00" ;
+    ex:temMetaKPI 3.67548e+03 ;
+    ex:temProduto "Particular" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 8.59101e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/342> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-24 00:00:00" ;
+    ex:temMetaKPI 1.60879e+03 ;
+    ex:temProduto "Himself" ;
+    ex:temQuantidadeVendida 39 ;
+    ex:temReceita 7.31526e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/343> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-23 00:00:00" ;
+    ex:temMetaKPI 4.91905e+03 ;
+    ex:temProduto "Smile" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 8.77928e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/344> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-06 00:00:00" ;
+    ex:temMetaKPI 3.07175e+03 ;
+    ex:temProduto "Ready" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 1.93975e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/345> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-31 00:00:00" ;
+    ex:temMetaKPI 4.4815e+03 ;
+    ex:temProduto "Wonder" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 7.35224e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/346> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-09 00:00:00" ;
+    ex:temMetaKPI 1.01365e+03 ;
+    ex:temProduto "Attention" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 9.18065e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/347> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-11 00:00:00" ;
+    ex:temMetaKPI 2.77192e+03 ;
+    ex:temProduto "Turn" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 5.9677e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/348> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-04 00:00:00" ;
+    ex:temMetaKPI 3.74887e+03 ;
+    ex:temProduto "Miss" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 6.4705e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/349> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-27 00:00:00" ;
+    ex:temMetaKPI 3.55304e+03 ;
+    ex:temProduto "Likely" ;
+    ex:temQuantidadeVendida 79 ;
+    ex:temReceita 2.80882e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/35> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-01 00:00:00" ;
+    ex:temMetaKPI 4.0394e+03 ;
+    ex:temProduto "Head" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 3.1854e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/350> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-04 00:00:00" ;
+    ex:temMetaKPI 3.40709e+03 ;
+    ex:temProduto "Forget" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 1.88084e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/351> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-06 00:00:00" ;
+    ex:temMetaKPI 2.74952e+03 ;
+    ex:temProduto "American" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 4.6157e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/352> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-29 00:00:00" ;
+    ex:temMetaKPI 1.80013e+03 ;
+    ex:temProduto "Writer" ;
+    ex:temQuantidadeVendida 45 ;
+    ex:temReceita 9.46136e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/353> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-18 00:00:00" ;
+    ex:temMetaKPI 1.12633e+03 ;
+    ex:temProduto "Go" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 4.15183e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/354> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-28 00:00:00" ;
+    ex:temMetaKPI 1.4626e+03 ;
+    ex:temProduto "Sign" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 8.66993e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/355> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-23 00:00:00" ;
+    ex:temMetaKPI 4.06585e+03 ;
+    ex:temProduto "Writer" ;
+    ex:temQuantidadeVendida 91 ;
+    ex:temReceita 9.44201e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/356> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-23 00:00:00" ;
+    ex:temMetaKPI 3.23978e+03 ;
+    ex:temProduto "Leg" ;
+    ex:temQuantidadeVendida 91 ;
+    ex:temReceita 7.66032e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/357> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-22 00:00:00" ;
+    ex:temMetaKPI 3.8607e+03 ;
+    ex:temProduto "Reach" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 3.7442e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/358> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-09 00:00:00" ;
+    ex:temMetaKPI 3.45169e+03 ;
+    ex:temProduto "Apply" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 8.37772e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/359> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-16 00:00:00" ;
+    ex:temMetaKPI 4.58901e+03 ;
+    ex:temProduto "Pass" ;
+    ex:temQuantidadeVendida 32 ;
+    ex:temReceita 1.23844e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/36> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-26 00:00:00" ;
+    ex:temMetaKPI 3.92859e+03 ;
+    ex:temProduto "Mother" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 5.18555e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/360> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-03 00:00:00" ;
+    ex:temMetaKPI 1.50576e+03 ;
+    ex:temProduto "Everyone" ;
+    ex:temQuantidadeVendida 13 ;
+    ex:temReceita 7.9533e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/361> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-23 00:00:00" ;
+    ex:temMetaKPI 2.62801e+03 ;
+    ex:temProduto "Soldier" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 1.60939e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/362> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-02 00:00:00" ;
+    ex:temMetaKPI 4.01182e+03 ;
+    ex:temProduto "Our" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 8.25128e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/363> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-13 00:00:00" ;
+    ex:temMetaKPI 1.71578e+03 ;
+    ex:temProduto "Song" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 8.94519e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/364> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 1.6508e+03 ;
+    ex:temProduto "Reach" ;
+    ex:temQuantidadeVendida 51 ;
+    ex:temReceita 2.78812e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/365> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-02 00:00:00" ;
+    ex:temMetaKPI 1.57652e+03 ;
+    ex:temProduto "Painting" ;
+    ex:temQuantidadeVendida 3 ;
+    ex:temReceita 8.53582e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/366> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-31 00:00:00" ;
+    ex:temMetaKPI 3.73267e+03 ;
+    ex:temProduto "Front" ;
+    ex:temQuantidadeVendida 83 ;
+    ex:temReceita 4.73725e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/367> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-13 00:00:00" ;
+    ex:temMetaKPI 2.30404e+03 ;
+    ex:temProduto "Arm" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 2.32364e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/368> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-13 00:00:00" ;
+    ex:temMetaKPI 3.14971e+03 ;
+    ex:temProduto "Newspaper" ;
+    ex:temQuantidadeVendida 69 ;
+    ex:temReceita 5.95792e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/369> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-10 00:00:00" ;
+    ex:temMetaKPI 1.18175e+03 ;
+    ex:temProduto "Radio" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 3.07355e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/37> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-20 00:00:00" ;
+    ex:temMetaKPI 4.32378e+03 ;
+    ex:temProduto "Everybody" ;
+    ex:temQuantidadeVendida 19 ;
+    ex:temReceita 7.716e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/370> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-16 00:00:00" ;
+    ex:temMetaKPI 3.83101e+03 ;
+    ex:temProduto "Out" ;
+    ex:temQuantidadeVendida 81 ;
+    ex:temReceita 8.95028e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/371> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-19 00:00:00" ;
+    ex:temMetaKPI 3.38429e+03 ;
+    ex:temProduto "Organization" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 5.90471e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/372> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-10 00:00:00" ;
+    ex:temMetaKPI 3.40971e+03 ;
+    ex:temProduto "Nature" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 8.45259e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/373> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-21 00:00:00" ;
+    ex:temMetaKPI 4.96474e+03 ;
+    ex:temProduto "Produce" ;
+    ex:temQuantidadeVendida 71 ;
+    ex:temReceita 5.56968e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/374> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-10 00:00:00" ;
+    ex:temMetaKPI 2.52253e+03 ;
+    ex:temProduto "Attorney" ;
+    ex:temQuantidadeVendida 36 ;
+    ex:temReceita 7.99241e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/375> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-25 00:00:00" ;
+    ex:temMetaKPI 1.50354e+03 ;
+    ex:temProduto "Shake" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 8.41701e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/376> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-02 00:00:00" ;
+    ex:temMetaKPI 1.87059e+03 ;
+    ex:temProduto "Have" ;
+    ex:temQuantidadeVendida 49 ;
+    ex:temReceita 6.35188e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/377> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-18 00:00:00" ;
+    ex:temMetaKPI 3.36157e+03 ;
+    ex:temProduto "Near" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 6.06551e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/378> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-18 00:00:00" ;
+    ex:temMetaKPI 1.93456e+03 ;
+    ex:temProduto "Yourself" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 4.0726e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/379> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-27 00:00:00" ;
+    ex:temMetaKPI 3.30262e+03 ;
+    ex:temProduto "Threat" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 3.19106e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/38> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-17 00:00:00" ;
+    ex:temMetaKPI 3.00545e+03 ;
+    ex:temProduto "Little" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 6.1604e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/380> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-23 00:00:00" ;
+    ex:temMetaKPI 1.23313e+03 ;
+    ex:temProduto "Ask" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 7.18561e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/381> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-01 00:00:00" ;
+    ex:temMetaKPI 2.98409e+03 ;
+    ex:temProduto "Call" ;
+    ex:temQuantidadeVendida 38 ;
+    ex:temReceita 9.5336e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/382> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-04 00:00:00" ;
+    ex:temMetaKPI 1.47059e+03 ;
+    ex:temProduto "Weight" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 4.10832e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/383> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-30 00:00:00" ;
+    ex:temMetaKPI 3.93121e+03 ;
+    ex:temProduto "My" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 5.51057e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/384> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-30 00:00:00" ;
+    ex:temMetaKPI 4.85595e+03 ;
+    ex:temProduto "Cut" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 4.32287e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/385> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-15 00:00:00" ;
+    ex:temMetaKPI 2.18589e+03 ;
+    ex:temProduto "Fast" ;
+    ex:temQuantidadeVendida 62 ;
+    ex:temReceita 7.90679e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/386> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-02 00:00:00" ;
+    ex:temMetaKPI 3.72657e+03 ;
+    ex:temProduto "Than" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 9.32695e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/387> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-18 00:00:00" ;
+    ex:temMetaKPI 3.14699e+03 ;
+    ex:temProduto "He" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 8.42047e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/388> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-04 00:00:00" ;
+    ex:temMetaKPI 2.90041e+03 ;
+    ex:temProduto "Wait" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 5.09081e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/389> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-12 00:00:00" ;
+    ex:temMetaKPI 2.48267e+03 ;
+    ex:temProduto "Anything" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 4.48715e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/39> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-24 00:00:00" ;
+    ex:temMetaKPI 2.02676e+03 ;
+    ex:temProduto "Imagine" ;
+    ex:temQuantidadeVendida 9 ;
+    ex:temReceita 4.29985e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/390> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-01 00:00:00" ;
+    ex:temMetaKPI 1.91898e+03 ;
+    ex:temProduto "Possible" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 7.40013e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/391> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-31 00:00:00" ;
+    ex:temMetaKPI 3.11323e+03 ;
+    ex:temProduto "Population" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 7.08132e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/392> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-21 00:00:00" ;
+    ex:temMetaKPI 2.8923e+03 ;
+    ex:temProduto "Service" ;
+    ex:temQuantidadeVendida 79 ;
+    ex:temReceita 1.27794e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/393> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-25 00:00:00" ;
+    ex:temMetaKPI 3.72528e+03 ;
+    ex:temProduto "Improve" ;
+    ex:temQuantidadeVendida 39 ;
+    ex:temReceita 3.40326e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/394> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-02 00:00:00" ;
+    ex:temMetaKPI 4.35194e+03 ;
+    ex:temProduto "Blue" ;
+    ex:temQuantidadeVendida 1 ;
+    ex:temReceita 5.807e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/395> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-06 00:00:00" ;
+    ex:temMetaKPI 2.31751e+03 ;
+    ex:temProduto "Want" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 3.3e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/396> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-06 00:00:00" ;
+    ex:temMetaKPI 1.95988e+03 ;
+    ex:temProduto "Road" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 5.6275e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/397> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-10 00:00:00" ;
+    ex:temMetaKPI 1.20009e+03 ;
+    ex:temProduto "Evening" ;
+    ex:temQuantidadeVendida 80 ;
+    ex:temReceita 2.42481e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/398> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-12 00:00:00" ;
+    ex:temMetaKPI 4.75739e+03 ;
+    ex:temProduto "Form" ;
+    ex:temQuantidadeVendida 62 ;
+    ex:temReceita 5.38659e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/399> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-18 00:00:00" ;
+    ex:temMetaKPI 4.8239e+03 ;
+    ex:temProduto "Upon" ;
+    ex:temQuantidadeVendida 67 ;
+    ex:temReceita 8.06367e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/4> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-02 00:00:00" ;
+    ex:temMetaKPI 1.11371e+03 ;
+    ex:temProduto "Moment" ;
+    ex:temQuantidadeVendida 11 ;
+    ex:temReceita 7.4354e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/40> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-03 00:00:00" ;
+    ex:temMetaKPI 1.76905e+03 ;
+    ex:temProduto "Senior" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 7.19206e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/400> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-31 00:00:00" ;
+    ex:temMetaKPI 3.42297e+03 ;
+    ex:temProduto "Daughter" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 4.28261e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/401> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-17 00:00:00" ;
+    ex:temMetaKPI 4.97813e+03 ;
+    ex:temProduto "Development" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 1.79042e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/402> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-04 00:00:00" ;
+    ex:temMetaKPI 3.40558e+03 ;
+    ex:temProduto "Various" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 1.6789e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/403> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-15 00:00:00" ;
+    ex:temMetaKPI 2.34602e+03 ;
+    ex:temProduto "Let" ;
+    ex:temQuantidadeVendida 70 ;
+    ex:temReceita 6.28264e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/404> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-03 00:00:00" ;
+    ex:temMetaKPI 2.5409e+03 ;
+    ex:temProduto "I" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 9.29394e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/405> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-05 00:00:00" ;
+    ex:temMetaKPI 1.35119e+03 ;
+    ex:temProduto "Follow" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 8.70373e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/406> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-31 00:00:00" ;
+    ex:temMetaKPI 4.39033e+03 ;
+    ex:temProduto "Push" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 7.19932e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/407> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-29 00:00:00" ;
+    ex:temMetaKPI 1.44535e+03 ;
+    ex:temProduto "So" ;
+    ex:temQuantidadeVendida 33 ;
+    ex:temReceita 9.3014e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/408> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-26 00:00:00" ;
+    ex:temMetaKPI 3.54325e+03 ;
+    ex:temProduto "Line" ;
+    ex:temQuantidadeVendida 85 ;
+    ex:temReceita 9.11779e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/409> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-15 00:00:00" ;
+    ex:temMetaKPI 1.10582e+03 ;
+    ex:temProduto "Ready" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 4.30337e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/41> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-07 00:00:00" ;
+    ex:temMetaKPI 1.29889e+03 ;
+    ex:temProduto "Paper" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 8.3439e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/410> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-14 00:00:00" ;
+    ex:temMetaKPI 3.82892e+03 ;
+    ex:temProduto "Take" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 6.54038e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/411> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-05 00:00:00" ;
+    ex:temMetaKPI 1.96982e+03 ;
+    ex:temProduto "Rather" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 9.90769e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/412> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-10 00:00:00" ;
+    ex:temMetaKPI 2.06866e+03 ;
+    ex:temProduto "Assume" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 6.69359e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/413> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-11 00:00:00" ;
+    ex:temMetaKPI 1.60018e+03 ;
+    ex:temProduto "Run" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 8.51873e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/414> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-12 00:00:00" ;
+    ex:temMetaKPI 1.87872e+03 ;
+    ex:temProduto "Recently" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 8.4738e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/415> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-09 00:00:00" ;
+    ex:temMetaKPI 3.1599e+03 ;
+    ex:temProduto "Reduce" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 5.65561e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/416> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-19 00:00:00" ;
+    ex:temMetaKPI 2.98285e+03 ;
+    ex:temProduto "Science" ;
+    ex:temQuantidadeVendida 7 ;
+    ex:temReceita 9.57872e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/417> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-01 00:00:00" ;
+    ex:temMetaKPI 1.08948e+03 ;
+    ex:temProduto "Nation" ;
+    ex:temQuantidadeVendida 31 ;
+    ex:temReceita 1.51206e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/418> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-17 00:00:00" ;
+    ex:temMetaKPI 1.26305e+03 ;
+    ex:temProduto "Explain" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 4.8163e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/419> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-21 00:00:00" ;
+    ex:temMetaKPI 1.61478e+03 ;
+    ex:temProduto "Nor" ;
+    ex:temQuantidadeVendida 39 ;
+    ex:temReceita 1.05379e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/42> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-16 00:00:00" ;
+    ex:temMetaKPI 2.38576e+03 ;
+    ex:temProduto "Left" ;
+    ex:temQuantidadeVendida 85 ;
+    ex:temReceita 2.6412e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/420> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-24 00:00:00" ;
+    ex:temMetaKPI 2.54414e+03 ;
+    ex:temProduto "Teach" ;
+    ex:temQuantidadeVendida 56 ;
+    ex:temReceita 1.82483e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/421> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-26 00:00:00" ;
+    ex:temMetaKPI 2.78559e+03 ;
+    ex:temProduto "Area" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 3.4172e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/422> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-30 00:00:00" ;
+    ex:temMetaKPI 3.26865e+03 ;
+    ex:temProduto "Painting" ;
+    ex:temQuantidadeVendida 8 ;
+    ex:temReceita 7.92317e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/423> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-10 00:00:00" ;
+    ex:temMetaKPI 2.31419e+03 ;
+    ex:temProduto "International" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 2.1092e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/424> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-14 00:00:00" ;
+    ex:temMetaKPI 2.90739e+03 ;
+    ex:temProduto "Exist" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 2.8022e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/425> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-04 00:00:00" ;
+    ex:temMetaKPI 3.82441e+03 ;
+    ex:temProduto "Coach" ;
+    ex:temQuantidadeVendida 63 ;
+    ex:temReceita 8.51251e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/426> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-25 00:00:00" ;
+    ex:temMetaKPI 1.55742e+03 ;
+    ex:temProduto "Worker" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 6.70231e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/427> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-28 00:00:00" ;
+    ex:temMetaKPI 4.3466e+03 ;
+    ex:temProduto "Movie" ;
+    ex:temQuantidadeVendida 53 ;
+    ex:temReceita 4.46351e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/428> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-30 00:00:00" ;
+    ex:temMetaKPI 1.05051e+03 ;
+    ex:temProduto "Still" ;
+    ex:temQuantidadeVendida 37 ;
+    ex:temReceita 1.39135e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/429> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-16 00:00:00" ;
+    ex:temMetaKPI 4.30857e+03 ;
+    ex:temProduto "Official" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 1.41357e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/43> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-26 00:00:00" ;
+    ex:temMetaKPI 4.36485e+03 ;
+    ex:temProduto "Imagine" ;
+    ex:temQuantidadeVendida 76 ;
+    ex:temReceita 4.58418e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/430> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-05-05 00:00:00" ;
+    ex:temMetaKPI 4.47352e+03 ;
+    ex:temProduto "Push" ;
+    ex:temQuantidadeVendida 25 ;
+    ex:temReceita 5.59421e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/431> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-16 00:00:00" ;
+    ex:temMetaKPI 4.21109e+03 ;
+    ex:temProduto "Interesting" ;
+    ex:temQuantidadeVendida 26 ;
+    ex:temReceita 2.10548e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/432> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-10 00:00:00" ;
+    ex:temMetaKPI 3.53269e+03 ;
+    ex:temProduto "Scientist" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 1.61003e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/433> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-22 00:00:00" ;
+    ex:temMetaKPI 1.72682e+03 ;
+    ex:temProduto "Present" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 2.5078e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/434> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-15 00:00:00" ;
+    ex:temMetaKPI 1.33013e+03 ;
+    ex:temProduto "Issue" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 1.09898e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/435> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-11 00:00:00" ;
+    ex:temMetaKPI 2.36079e+03 ;
+    ex:temProduto "Town" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 4.39221e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/436> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-11 00:00:00" ;
+    ex:temMetaKPI 4.10407e+03 ;
+    ex:temProduto "Customer" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 4.91479e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/437> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-01-06 00:00:00" ;
+    ex:temMetaKPI 4.76682e+03 ;
+    ex:temProduto "Few" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 3.48459e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/438> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-26 00:00:00" ;
+    ex:temMetaKPI 1.39819e+03 ;
+    ex:temProduto "Pm" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 8.15941e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/439> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-01 00:00:00" ;
+    ex:temMetaKPI 4.23419e+03 ;
+    ex:temProduto "Rock" ;
+    ex:temQuantidadeVendida 6 ;
+    ex:temReceita 8.61663e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/44> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-04 00:00:00" ;
+    ex:temMetaKPI 3.90557e+03 ;
+    ex:temProduto "Situation" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 4.86219e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/440> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-09 00:00:00" ;
+    ex:temMetaKPI 2.98612e+03 ;
+    ex:temProduto "Your" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 4.60036e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/441> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-03-03 00:00:00" ;
+    ex:temMetaKPI 3.107e+03 ;
+    ex:temProduto "Ago" ;
+    ex:temQuantidadeVendida 92 ;
+    ex:temReceita 3.10991e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/442> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-29 00:00:00" ;
+    ex:temMetaKPI 3.40202e+03 ;
+    ex:temProduto "NaN"^^xsd:double ;
+    ex:temQuantidadeVendida 31 ;
+    ex:temReceita 9.64815e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/443> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-15 00:00:00" ;
+    ex:temMetaKPI 4.03536e+03 ;
+    ex:temProduto "Change" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 4.96137e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/444> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-24 00:00:00" ;
+    ex:temMetaKPI 4.58336e+03 ;
+    ex:temProduto "Standard" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 3.34391e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/445> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-13 00:00:00" ;
+    ex:temMetaKPI 3.29326e+03 ;
+    ex:temProduto "Tend" ;
+    ex:temQuantidadeVendida 49 ;
+    ex:temReceita 5.34123e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/446> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-17 00:00:00" ;
+    ex:temMetaKPI 4.79005e+03 ;
+    ex:temProduto "Statement" ;
+    ex:temQuantidadeVendida 77 ;
+    ex:temReceita 1.76107e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/447> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-23 00:00:00" ;
+    ex:temMetaKPI 4.66979e+03 ;
+    ex:temProduto "Region" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 7.34861e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/448> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-01 00:00:00" ;
+    ex:temMetaKPI 3.91808e+03 ;
+    ex:temProduto "War" ;
+    ex:temQuantidadeVendida 79 ;
+    ex:temReceita 4.22283e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/449> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-19 00:00:00" ;
+    ex:temMetaKPI 2.87427e+03 ;
+    ex:temProduto "Alone" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 5.94378e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/45> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-08 00:00:00" ;
+    ex:temMetaKPI 2.03329e+03 ;
+    ex:temProduto "Southern" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 7.52779e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/450> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-18 00:00:00" ;
+    ex:temMetaKPI 4.78667e+03 ;
+    ex:temProduto "Fall" ;
+    ex:temQuantidadeVendida 91 ;
+    ex:temReceita 8.92407e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/451> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-01 00:00:00" ;
+    ex:temMetaKPI 3.95329e+03 ;
+    ex:temProduto "Report" ;
+    ex:temQuantidadeVendida 38 ;
+    ex:temReceita 5.17015e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/452> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-26 00:00:00" ;
+    ex:temMetaKPI 4.74903e+03 ;
+    ex:temProduto "Though" ;
+    ex:temQuantidadeVendida 24 ;
+    ex:temReceita 5.29515e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/453> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-25 00:00:00" ;
+    ex:temMetaKPI 1.17174e+03 ;
+    ex:temProduto "Trade" ;
+    ex:temQuantidadeVendida 98 ;
+    ex:temReceita 8.57688e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/454> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-17 00:00:00" ;
+    ex:temMetaKPI 4.10116e+03 ;
+    ex:temProduto "Room" ;
+    ex:temQuantidadeVendida 35 ;
+    ex:temReceita 4.52345e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/455> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-20 00:00:00" ;
+    ex:temMetaKPI 1.12669e+03 ;
+    ex:temProduto "Science" ;
+    ex:temQuantidadeVendida 93 ;
+    ex:temReceita 5.3105e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/456> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-18 00:00:00" ;
+    ex:temMetaKPI 2.56514e+03 ;
+    ex:temProduto "Crime" ;
+    ex:temQuantidadeVendida 86 ;
+    ex:temReceita 2.05422e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/457> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-08 00:00:00" ;
+    ex:temMetaKPI 4.66052e+03 ;
+    ex:temProduto "Government" ;
+    ex:temQuantidadeVendida 59 ;
+    ex:temReceita 1.0977e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/458> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-03 00:00:00" ;
+    ex:temMetaKPI 3.21872e+03 ;
+    ex:temProduto "Else" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 6.3379e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/459> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-13 00:00:00" ;
+    ex:temMetaKPI 1.04608e+03 ;
+    ex:temProduto "Leader" ;
+    ex:temQuantidadeVendida 60 ;
+    ex:temReceita 4.20028e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/46> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-14 00:00:00" ;
+    ex:temMetaKPI 4.31849e+03 ;
+    ex:temProduto "Media" ;
+    ex:temQuantidadeVendida 71 ;
+    ex:temReceita 5.07917e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/460> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-31 00:00:00" ;
+    ex:temMetaKPI 4.47601e+03 ;
+    ex:temProduto "Program" ;
+    ex:temQuantidadeVendida 35 ;
+    ex:temReceita 8.03769e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/461> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-24 00:00:00" ;
+    ex:temMetaKPI 2.86782e+03 ;
+    ex:temProduto "Away" ;
+    ex:temQuantidadeVendida 19 ;
+    ex:temReceita 4.28276e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/462> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-25 00:00:00" ;
+    ex:temMetaKPI 3.67511e+03 ;
+    ex:temProduto "Week" ;
+    ex:temQuantidadeVendida 52 ;
+    ex:temReceita 3.82108e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/463> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-10-30 00:00:00" ;
+    ex:temMetaKPI 3.75607e+03 ;
+    ex:temProduto "Nature" ;
+    ex:temQuantidadeVendida 27 ;
+    ex:temReceita 8.23025e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/464> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-23 00:00:00" ;
+    ex:temMetaKPI 4.06084e+03 ;
+    ex:temProduto "International" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 7.56129e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/465> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-09 00:00:00" ;
+    ex:temMetaKPI 3.51127e+03 ;
+    ex:temProduto "Table" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 8.86483e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/466> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-20 00:00:00" ;
+    ex:temMetaKPI 4.78337e+03 ;
+    ex:temProduto "Prevent" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 4.82486e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/467> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-24 00:00:00" ;
+    ex:temMetaKPI 4.31308e+03 ;
+    ex:temProduto "Include" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 4.66177e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/468> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-19 00:00:00" ;
+    ex:temMetaKPI 1.55863e+03 ;
+    ex:temProduto "Raise" ;
+    ex:temQuantidadeVendida 20 ;
+    ex:temReceita 9.526e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/469> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-13 00:00:00" ;
+    ex:temMetaKPI 3.44054e+03 ;
+    ex:temProduto "Last" ;
+    ex:temQuantidadeVendida 42 ;
+    ex:temReceita 6.6805e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/47> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-02-06 00:00:00" ;
+    ex:temMetaKPI 1.75547e+03 ;
+    ex:temProduto "It" ;
+    ex:temQuantidadeVendida 61 ;
+    ex:temReceita 6.20949e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/470> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-22 00:00:00" ;
+    ex:temMetaKPI 3.59742e+03 ;
+    ex:temProduto "Friend" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 6.78687e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/471> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-05-18 00:00:00" ;
+    ex:temMetaKPI 3.88742e+03 ;
+    ex:temProduto "Read" ;
+    ex:temQuantidadeVendida 84 ;
+    ex:temReceita 6.27638e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/472> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-21 00:00:00" ;
+    ex:temMetaKPI 4.1225e+03 ;
+    ex:temProduto "Short" ;
+    ex:temQuantidadeVendida 45 ;
+    ex:temReceita 7.25995e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/473> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-28 00:00:00" ;
+    ex:temMetaKPI 2.3247e+03 ;
+    ex:temProduto "High" ;
+    ex:temQuantidadeVendida 53 ;
+    ex:temReceita 3.75206e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/474> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-10 00:00:00" ;
+    ex:temMetaKPI 3.50162e+03 ;
+    ex:temProduto "For" ;
+    ex:temQuantidadeVendida 79 ;
+    ex:temReceita 1.9496e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/475> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-09 00:00:00" ;
+    ex:temMetaKPI 3.50545e+03 ;
+    ex:temProduto "Already" ;
+    ex:temQuantidadeVendida 40 ;
+    ex:temReceita 8.25686e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/476> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-02 00:00:00" ;
+    ex:temMetaKPI 4.82426e+03 ;
+    ex:temProduto "Case" ;
+    ex:temQuantidadeVendida 14 ;
+    ex:temReceita 6.93784e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/477> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-07 00:00:00" ;
+    ex:temMetaKPI 2.61763e+03 ;
+    ex:temProduto "Action" ;
+    ex:temQuantidadeVendida 47 ;
+    ex:temReceita 9.91246e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/478> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-02 00:00:00" ;
+    ex:temMetaKPI 3.76141e+03 ;
+    ex:temProduto "Help" ;
+    ex:temQuantidadeVendida 64 ;
+    ex:temReceita 2.36567e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/479> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-06-07 00:00:00" ;
+    ex:temMetaKPI 4.94894e+03 ;
+    ex:temProduto "Various" ;
+    ex:temQuantidadeVendida 57 ;
+    ex:temReceita 8.42571e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/48> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-06-03 00:00:00" ;
+    ex:temMetaKPI 2.94708e+03 ;
+    ex:temProduto "About" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 8.40754e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/480> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-17 00:00:00" ;
+    ex:temMetaKPI 2.4232e+03 ;
+    ex:temProduto "Her" ;
+    ex:temQuantidadeVendida 58 ;
+    ex:temReceita 9.5083e+02 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/481> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-03 00:00:00" ;
+    ex:temMetaKPI 1.5219e+03 ;
+    ex:temProduto "Nothing" ;
+    ex:temQuantidadeVendida 12 ;
+    ex:temReceita 6.00748e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/482> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-08 00:00:00" ;
+    ex:temMetaKPI 1.99845e+03 ;
+    ex:temProduto "Mouth" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 4.57044e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/483> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-24 00:00:00" ;
+    ex:temMetaKPI 3.62354e+03 ;
+    ex:temProduto "Support" ;
+    ex:temQuantidadeVendida 28 ;
+    ex:temReceita 9.42093e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/484> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-07-07 00:00:00" ;
+    ex:temMetaKPI 1.49534e+03 ;
+    ex:temProduto "Anyone" ;
+    ex:temQuantidadeVendida 34 ;
+    ex:temReceita 6.84606e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/485> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-06 00:00:00" ;
+    ex:temMetaKPI 2.44592e+03 ;
+    ex:temProduto "Unit" ;
+    ex:temQuantidadeVendida 63 ;
+    ex:temReceita 7.71648e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/486> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-28 00:00:00" ;
+    ex:temMetaKPI 2.56894e+03 ;
+    ex:temProduto "Throughout" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 9.44996e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/487> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-26 00:00:00" ;
+    ex:temMetaKPI 2.81317e+03 ;
+    ex:temProduto "Her" ;
+    ex:temQuantidadeVendida 66 ;
+    ex:temReceita 1.34e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/488> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-02 00:00:00" ;
+    ex:temMetaKPI 4.56841e+03 ;
+    ex:temProduto "At" ;
+    ex:temQuantidadeVendida 68 ;
+    ex:temReceita 9.32974e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/489> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-08 00:00:00" ;
+    ex:temMetaKPI 1.01111e+03 ;
+    ex:temProduto "Tell" ;
+    ex:temQuantidadeVendida 23 ;
+    ex:temReceita 4.05504e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/49> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-04-05 00:00:00" ;
+    ex:temMetaKPI 3.09267e+03 ;
+    ex:temProduto "Something" ;
+    ex:temQuantidadeVendida 97 ;
+    ex:temReceita 4.93896e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/490> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-24 00:00:00" ;
+    ex:temMetaKPI 1.95808e+03 ;
+    ex:temProduto "Newspaper" ;
+    ex:temQuantidadeVendida 21 ;
+    ex:temReceita 3.23832e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/491> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-13 00:00:00" ;
+    ex:temMetaKPI 4.2706e+03 ;
+    ex:temProduto "Modern" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 1.39437e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/492> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-10 00:00:00" ;
+    ex:temMetaKPI 2.951e+03 ;
+    ex:temProduto "Sea" ;
+    ex:temQuantidadeVendida 13 ;
+    ex:temReceita 2.69575e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/493> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-29 00:00:00" ;
+    ex:temMetaKPI 3.71005e+03 ;
+    ex:temProduto "Life" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 7.85474e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/494> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-01-23 00:00:00" ;
+    ex:temMetaKPI 4.3204e+03 ;
+    ex:temProduto "Relationship" ;
+    ex:temQuantidadeVendida 94 ;
+    ex:temReceita 9.76374e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/495> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-16 00:00:00" ;
+    ex:temMetaKPI 3.95665e+03 ;
+    ex:temProduto "Show" ;
+    ex:temQuantidadeVendida 58 ;
+    ex:temReceita 6.63095e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/496> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-19 00:00:00" ;
+    ex:temMetaKPI 4.11194e+03 ;
+    ex:temProduto "Always" ;
+    ex:temQuantidadeVendida 91 ;
+    ex:temReceita 4.2744e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/497> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-30 00:00:00" ;
+    ex:temMetaKPI 1.8261e+03 ;
+    ex:temProduto "Low" ;
+    ex:temQuantidadeVendida 36 ;
+    ex:temReceita 7.98343e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/498> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-08-19 00:00:00" ;
+    ex:temMetaKPI 4.8156e+03 ;
+    ex:temProduto "Fear" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 9.18288e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/499> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-02 00:00:00" ;
+    ex:temMetaKPI 2.91293e+03 ;
+    ex:temProduto "Arm" ;
+    ex:temQuantidadeVendida 16 ;
+    ex:temReceita 5.68652e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/5> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-25 00:00:00" ;
+    ex:temMetaKPI 3.08062e+03 ;
+    ex:temProduto "Better" ;
+    ex:temQuantidadeVendida 15 ;
+    ex:temReceita 8.49245e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/50> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-06 00:00:00" ;
+    ex:temMetaKPI 1.73176e+03 ;
+    ex:temProduto "Look" ;
+    ex:temQuantidadeVendida 99 ;
+    ex:temReceita 5.32072e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/500> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-20 00:00:00" ;
+    ex:temMetaKPI 2.92176e+03 ;
+    ex:temProduto "Fire" ;
+    ex:temQuantidadeVendida 79 ;
+    ex:temReceita 9.87702e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/51> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-30 00:00:00" ;
+    ex:temMetaKPI 2.40264e+03 ;
+    ex:temProduto "Somebody" ;
+    ex:temQuantidadeVendida 84 ;
+    ex:temReceita 9.52613e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/52> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-11 00:00:00" ;
+    ex:temMetaKPI 3.4168e+03 ;
+    ex:temProduto "Usually" ;
+    ex:temQuantidadeVendida 66 ;
+    ex:temReceita 8.8473e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/53> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-30 00:00:00" ;
+    ex:temMetaKPI 2.42644e+03 ;
+    ex:temProduto "International" ;
+    ex:temQuantidadeVendida 19 ;
+    ex:temReceita 7.1834e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/54> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-07-09 00:00:00" ;
+    ex:temMetaKPI 1.86758e+03 ;
+    ex:temProduto "Become" ;
+    ex:temQuantidadeVendida 53 ;
+    ex:temReceita 9.2439e+02 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/55> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-28 00:00:00" ;
+    ex:temMetaKPI 4.66046e+03 ;
+    ex:temProduto "Sometimes" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 2.14273e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/56> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-11 00:00:00" ;
+    ex:temMetaKPI 4.09984e+03 ;
+    ex:temProduto "Dark" ;
+    ex:temQuantidadeVendida 8 ;
+    ex:temReceita 5.51489e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/57> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-31 00:00:00" ;
+    ex:temMetaKPI 2.44069e+03 ;
+    ex:temProduto "Doctor" ;
+    ex:temQuantidadeVendida 70 ;
+    ex:temReceita 1.35941e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/58> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-10-02 00:00:00" ;
+    ex:temMetaKPI 2.53574e+03 ;
+    ex:temProduto "Friend" ;
+    ex:temQuantidadeVendida 69 ;
+    ex:temReceita 1.19677e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/59> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-31 00:00:00" ;
+    ex:temMetaKPI 4.68869e+03 ;
+    ex:temProduto "Someone" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 5.88219e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/6> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-16 00:00:00" ;
+    ex:temMetaKPI 3.07489e+03 ;
+    ex:temProduto "Wife" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 3.3744e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/60> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-19 00:00:00" ;
+    ex:temMetaKPI 2.08365e+03 ;
+    ex:temProduto "Audience" ;
+    ex:temQuantidadeVendida 4 ;
+    ex:temReceita 8.94799e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/61> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-02-09 00:00:00" ;
+    ex:temMetaKPI 3.04802e+03 ;
+    ex:temProduto "Glass" ;
+    ex:temQuantidadeVendida 29 ;
+    ex:temReceita 9.63828e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/62> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-01-13 00:00:00" ;
+    ex:temMetaKPI 3.01033e+03 ;
+    ex:temProduto "Floor" ;
+    ex:temQuantidadeVendida 20 ;
+    ex:temReceita 5.47471e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/63> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-11 00:00:00" ;
+    ex:temMetaKPI 2.20604e+03 ;
+    ex:temProduto "Low" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 6.38428e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/64> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-10-14 00:00:00" ;
+    ex:temMetaKPI 3.68104e+03 ;
+    ex:temProduto "Television" ;
+    ex:temQuantidadeVendida 38 ;
+    ex:temReceita 8.48171e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/65> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-09-01 00:00:00" ;
+    ex:temMetaKPI 3.33512e+03 ;
+    ex:temProduto "Into" ;
+    ex:temQuantidadeVendida 21 ;
+    ex:temReceita 2.70364e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/66> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-13 00:00:00" ;
+    ex:temMetaKPI 2.1148e+03 ;
+    ex:temProduto "All" ;
+    ex:temQuantidadeVendida 82 ;
+    ex:temReceita 6.73502e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/67> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-01-15 00:00:00" ;
+    ex:temMetaKPI 3.33694e+03 ;
+    ex:temProduto "Fill" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 9.97922e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/68> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-19 00:00:00" ;
+    ex:temMetaKPI 1.85344e+03 ;
+    ex:temProduto "Which" ;
+    ex:temQuantidadeVendida 43 ;
+    ex:temReceita 6.77155e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/69> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-16 00:00:00" ;
+    ex:temMetaKPI 4.36925e+03 ;
+    ex:temProduto "Answer" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 4.18192e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/7> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-08 00:00:00" ;
+    ex:temMetaKPI 4.5748e+03 ;
+    ex:temProduto "Daughter" ;
+    ex:temQuantidadeVendida 74 ;
+    ex:temReceita 8.55708e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/70> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-07-18 00:00:00" ;
+    ex:temMetaKPI 4.42116e+03 ;
+    ex:temProduto "Through" ;
+    ex:temQuantidadeVendida 65 ;
+    ex:temReceita 7.25201e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/71> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-19 00:00:00" ;
+    ex:temMetaKPI 2.01631e+03 ;
+    ex:temProduto "Money" ;
+    ex:temQuantidadeVendida 78 ;
+    ex:temReceita 1.54727e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/72> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-23 00:00:00" ;
+    ex:temMetaKPI 1.24489e+03 ;
+    ex:temProduto "End" ;
+    ex:temQuantidadeVendida 25 ;
+    ex:temReceita 8.43262e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/73> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-21 00:00:00" ;
+    ex:temMetaKPI 4.84307e+03 ;
+    ex:temProduto "Figure" ;
+    ex:temQuantidadeVendida 67 ;
+    ex:temReceita 5.8911e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/74> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-04-08 00:00:00" ;
+    ex:temMetaKPI 2.14412e+03 ;
+    ex:temProduto "Least" ;
+    ex:temQuantidadeVendida 5 ;
+    ex:temReceita 2.14305e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/75> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-05-11 00:00:00" ;
+    ex:temMetaKPI 1.39227e+03 ;
+    ex:temProduto "College" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 1.84533e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/76> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-03 00:00:00" ;
+    ex:temMetaKPI 1.36653e+03 ;
+    ex:temProduto "Hear" ;
+    ex:temQuantidadeVendida 70 ;
+    ex:temReceita 5.60294e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/77> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-29 00:00:00" ;
+    ex:temMetaKPI 2.9354e+03 ;
+    ex:temProduto "Such" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 1.45777e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/78> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-16 00:00:00" ;
+    ex:temMetaKPI 3.62354e+03 ;
+    ex:temProduto "Charge" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 7.68797e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/79> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-04-26 00:00:00" ;
+    ex:temMetaKPI 2.12356e+03 ;
+    ex:temProduto "Million" ;
+    ex:temQuantidadeVendida 10 ;
+    ex:temReceita 8.3282e+02 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/8> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-03-20 00:00:00" ;
+    ex:temMetaKPI 1.54041e+03 ;
+    ex:temProduto "Put" ;
+    ex:temQuantidadeVendida 36 ;
+    ex:temReceita 1.75743e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/80> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-02-19 00:00:00" ;
+    ex:temMetaKPI 4.5786e+03 ;
+    ex:temProduto "Fill" ;
+    ex:temQuantidadeVendida 22 ;
+    ex:temReceita 2.98646e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/81> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-09 00:00:00" ;
+    ex:temMetaKPI 3.21803e+03 ;
+    ex:temProduto "Rather" ;
+    ex:temQuantidadeVendida 87 ;
+    ex:temReceita 2.60389e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/82> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-08-04 00:00:00" ;
+    ex:temMetaKPI 3.41811e+03 ;
+    ex:temProduto "Though" ;
+    ex:temQuantidadeVendida 90 ;
+    ex:temReceita 9.7867e+02 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/83> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-10-15 00:00:00" ;
+    ex:temMetaKPI 4.26438e+03 ;
+    ex:temProduto "Heart" ;
+    ex:temQuantidadeVendida 62 ;
+    ex:temReceita 5.64147e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/84> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-03-23 00:00:00" ;
+    ex:temMetaKPI 2.33847e+03 ;
+    ex:temProduto "Miss" ;
+    ex:temQuantidadeVendida 44 ;
+    ex:temReceita 5.83518e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/85> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-06 00:00:00" ;
+    ex:temMetaKPI 2.17479e+03 ;
+    ex:temProduto "Nature" ;
+    ex:temQuantidadeVendida 18 ;
+    ex:temReceita 4.18982e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/86> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-28 00:00:00" ;
+    ex:temMetaKPI 1.34179e+03 ;
+    ex:temProduto "Analysis" ;
+    ex:temQuantidadeVendida 20 ;
+    ex:temReceita 6.05039e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/87> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-02-21 00:00:00" ;
+    ex:temMetaKPI 1.82718e+03 ;
+    ex:temProduto "Suddenly" ;
+    ex:temQuantidadeVendida 61 ;
+    ex:temReceita 3.52574e+03 ;
+    ex:temRegiao "Sul" .
+
+<https://contoso.com/vendas/venda/88> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-01 00:00:00" ;
+    ex:temMetaKPI 2.38731e+03 ;
+    ex:temProduto "Few" ;
+    ex:temQuantidadeVendida 41 ;
+    ex:temReceita 1.23399e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/89> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-09-21 00:00:00" ;
+    ex:temMetaKPI 1.24795e+03 ;
+    ex:temProduto "Most" ;
+    ex:temQuantidadeVendida 83 ;
+    ex:temReceita 5.60067e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/9> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-26 00:00:00" ;
+    ex:temMetaKPI 1.65483e+03 ;
+    ex:temProduto "Throughout" ;
+    ex:temQuantidadeVendida 66 ;
+    ex:temReceita 8.93373e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/90> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-09-12 00:00:00" ;
+    ex:temMetaKPI 1.98803e+03 ;
+    ex:temProduto "Community" ;
+    ex:temQuantidadeVendida 40 ;
+    ex:temReceita 5.66293e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/91> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-04-18 00:00:00" ;
+    ex:temMetaKPI 1.3657e+03 ;
+    ex:temProduto "Once" ;
+    ex:temQuantidadeVendida 28 ;
+    ex:temReceita 7.03728e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/92> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-06-20 00:00:00" ;
+    ex:temMetaKPI 4.10402e+03 ;
+    ex:temProduto "Into" ;
+    ex:temQuantidadeVendida 71 ;
+    ex:temReceita 6.12954e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/93> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-09-07 00:00:00" ;
+    ex:temMetaKPI 4.7149e+03 ;
+    ex:temProduto "Allow" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 1.24296e+03 ;
+    ex:temRegiao "Norte" .
+
+<https://contoso.com/vendas/venda/94> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Roupas ;
+    ex:temDataVenda "2025-08-26 00:00:00" ;
+    ex:temMetaKPI 3.32569e+03 ;
+    ex:temProduto "Think" ;
+    ex:temQuantidadeVendida 77 ;
+    ex:temReceita 8.38289e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/95> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Eletrônicos ;
+    ex:temDataVenda "2025-05-26 00:00:00" ;
+    ex:temMetaKPI 3.81361e+03 ;
+    ex:temProduto "Message" ;
+    ex:temQuantidadeVendida 72 ;
+    ex:temReceita 5.57271e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/96> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-03-10 00:00:00" ;
+    ex:temMetaKPI 4.86618e+03 ;
+    ex:temProduto "Quality" ;
+    ex:temQuantidadeVendida 55 ;
+    ex:temReceita 3.30411e+03 ;
+    ex:temRegiao "Oeste" .
+
+<https://contoso.com/vendas/venda/97> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-07-22 00:00:00" ;
+    ex:temMetaKPI 4.60429e+03 ;
+    ex:temProduto "Role" ;
+    ex:temQuantidadeVendida 97 ;
+    ex:temReceita 5.8864e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/98> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Alimentos ;
+    ex:temDataVenda "2025-08-19 00:00:00" ;
+    ex:temMetaKPI 2.69698e+03 ;
+    ex:temProduto "Man" ;
+    ex:temQuantidadeVendida 54 ;
+    ex:temReceita 6.2548e+03 ;
+    ex:temRegiao "Leste" .
+
+<https://contoso.com/vendas/venda/99> a ex:Venda ;
+    ex:temCategoria ex:Categoria_Brinquedos ;
+    ex:temDataVenda "2025-06-15 00:00:00" ;
+    ex:temMetaKPI 3.14891e+03 ;
+    ex:temProduto "Live" ;
+    ex:temQuantidadeVendida 46 ;
+    ex:temReceita 3.2064e+02 ;
+    ex:temRegiao "Norte" .
+
+ex:Categoria_Produtos a skos:Concept ;
+    skos:inScheme ex:CategoriasScheme ;
+    skos:narrower ex:Categoria_Alimentos,
+        ex:Categoria_Brinquedos,
+        ex:Categoria_Eletrônicos,
+        ex:Categoria_Roupas ;
+    skos:prefLabel "Produtos"@pt .
+
+ex:CategoriasScheme a skos:ConceptScheme ;
+    skos:prefLabel "Esquema de Categorias de Vendas"@pt .
+
+ex:Categoria_Brinquedos a skos:Concept ;
+    skos:broader ex:Categoria_Produtos ;
+    skos:inScheme ex:CategoriasScheme ;
+    skos:prefLabel "Brinquedos"@pt .
+
+ex:Categoria_Roupas a skos:Concept ;
+    skos:broader ex:Categoria_Produtos ;
+    skos:inScheme ex:CategoriasScheme ;
+    skos:prefLabel "Roupas"@pt .
+
+ex:Categoria_Alimentos a skos:Concept ;
+    skos:broader ex:Categoria_Produtos ;
+    skos:inScheme ex:CategoriasScheme ;
+    skos:prefLabel "Alimentos"@pt .
+
+ex:Categoria_Eletrônicos a skos:Concept ;
+    skos:broader ex:Categoria_Produtos ;
+    skos:inScheme ex:CategoriasScheme ;
+    skos:prefLabel "Eletrônicos"@pt .
+
+ex:Venda a owl:Class .
+
