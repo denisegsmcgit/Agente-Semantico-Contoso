@@ -15,7 +15,7 @@ A solução combina:
 Criando um agente capaz de responder perguntas de forma precisa, explicável e alinhada ao conhecimento oficial da empresa *Contoso* (empresa fictícia para fins educativos).
 
 ---
-## Objetivo do Agente
+## 1. Objetivo do Agente
 
 A Contoso precisava de um **Analista Virtual Semântico**, capaz de conectar diferentes fontes de informação que, isoladas, não entregavam respostas completas.  
 O objetivo do agente é justamente **unificar esses dados e reconstruir o contexto** necessário para responder perguntas de forma clara e fundamentada.
@@ -33,7 +33,7 @@ Essa integração permite que o agente realize **RAG semântico**, onde:
 
 Assim, o agente consegue responder perguntas que dependem de **contexto, relações e evidências**, entregando análises mais completas dentro do Azure AI Foundry.
 
-#  **Problema de Negócio**
+##  2. Problema de Negócio
 
 Empresas como a Contoso lidam com:
 
@@ -64,7 +64,7 @@ A Contoso precisava de um **Analista Virtual Semântico**, capaz de conectar:
 
 ---
 
-#  **Objetivo da Solução**
+##  3. Objetivo da Solução
 
 Construir um agente inteligente que:
 
@@ -80,75 +80,184 @@ O objetivo final:
 
 ---
 
-# **Benefícios para a Própria Tecnologia LLM**
+## 4. Benefícios para a Própria Tecnologia LLM
 
 A solução foi projetada para **corrigir limitações conhecidas dos LLMs**, ampliando sua confiabilidade:
 
-### 1. Redução de Alucinações  
+### 4.1 Redução de Alucinações  
 A ontologia guia o modelo para respostas mais precisas.
 
-### 2. Consistência Semântica  
+### 4.2 Consistência Semântica  
 SKOS/OWL mantém categorias e relações coerentes, independentemente da forma da pergunta.
 
-### 3. Contexto Estruturado  
+### 4.3 Contexto Estruturado  
 O LLM usa conhecimento governado, auditável e padronizado.
 
-### 4. Inferências que o LLM não consegue fazer  
+### 4.4 Inferências que o LLM não consegue fazer  
 O reasoning OWL-RL infere relações broader/narrower, subclasses, transitividades etc.
 
-### 5. Recuperação Dirigida  
+### 4.5 Recuperação Dirigida  
 Azure Cognitive Search + Grafo reduzem ruído e melhoram a precisão do RAG.
 
-### 6. Explicabilidade  
+### 4.6 Explicabilidade  
 Cada resposta pode ser rastreada em:
 
 - triplas RDF  
 - regras OWL  
 - trechos do PDF  
 
-### 7. Redução de Custos  
+### 4.7 Redução de Custos  
 Menos tokens → menos chamadas → menor custo de operação.
 
 ---
 
-# **Arquitetura Geral do Pipeline**
+## 5.Arquitetura Geral do Pipeline
 
 ```
 PDF → Azure Cognitive Search → SKOS/OWL Grafo RDF → Reasoning (OWL-RL) 
 → RAG → FastAPI → ngrok → Azure Foundry
 ```
 
-### 1) **PDF → Azure Cognitive Search**  
+### 5.1) **PDF → Azure Cognitive Search**  
 Indexação para recuperação de insights.
 
-### 2) **Grafo RDF (SKOS + OWL)**  
+### 5.2) **Grafo RDF (SKOS + OWL)**  
 Base de conhecimento estruturado.
 
-### 3) **Reasoning OWL-RL**  
+### 5.3) **Reasoning OWL-RL**  
 Inferências automáticas.
 
-### 4) **FastAPI**  
+### 5.4) **FastAPI**  
 Endpoint `/perguntar`.
 
-### 5) **ngrok**  
+### 5.5) **ngrok**  
 Exposição global da API.
 
-### 6) **Azure AI Foundry**  
+### 5.6) **Azure AI Foundry**  
 Agente usa ferramenta HTTP para consultar o backend.
 
 ---
 
-# **Fluxo Completo da Solução**
+## 6. Visão Geral do Projeto
 
 ```
-Usuário → Azure Foundry → Ferramenta HTTP (/perguntar)
-→ FastAPI → Grafo SKOS/OWL + Reasoning + Search
-→ OpenAI → Resposta Semântica
++---------------------+
+|     Usuário         |
++----------+----------+
+           |
+           v
++-------------------------------+
+|  Azure Foundry (Agente IA)    |
+|  - Usa a ferramenta HTTP      |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|  FastAPI /perguntar?q=...     |
+|  (exposta via ngrok)          |
++-------------------------------+
+           |
+           v
++-------------------------------+
+|   Pipeline Semântico RAG      |
+|   - Grafo SKOS/OWL            |
+|   - Reasoning OWL-RL          |
+|   - Azure Cognitive Search    |
+|   - Interpretação OpenAI      |
++-------------------------------+
+           |
+           v
++---------------------+
+|     Resposta        |
++---------------------+
 ```
 
 ---
 
-# **Estrutura do Repositório**
+## 7. Arquitetura Semântica do Agente
+
+### **Componentes principais**
+| Camada | Tecnologia | Função |
+|--------|------------|--------|
+| 📘 Representação | SKOS, OWL, RDF | Conceitos, categorias e hierarquias |
+| 🧩 Inferência | OWL-RL (owlrl) | Geração de novas triplas inferidas |
+| 🔍 Recuperação | Azure Cognitive Search | Contexto do PDF |
+| 🔧 API | FastAPI | Endpoint `/perguntar` |
+| 🌐 Exposição | Ngrok | Tornar a API acessível ao Foundry |
+| 🤖 Agente | Azure AI Foundry | Usa a ferramenta HTTP |
+| 🧠 RAG | Azure OpenAI | Combinação de grafo + texto |
+
+---
+
+## 8. Fluxo Completo da Solução (Premium)
+
+```
+ ┌───────────────────────────────────────────────────────────────┐
+ │                          INÍCIO                                │
+ └───────────────────────────────────────────────────────────────┘
+                |
+                v
+     ┌─────────────────────────┐
+     │ Pergunta do Usuário     │
+     └─────────────────────────┘
+                |
+                v
+     ┌──────────────────────────────────┐
+     │ Azure Foundry chama a ferramenta │
+     │      consultar_agente_rag        │
+     └──────────────────────────────────┘
+                |
+                v
+     ┌──────────────────────────────────┐
+     │      FastAPI recebe /perguntar  │
+     └──────────────────────────────────┘
+                |
+                v
+     ┌────────────────────────────────────────┐
+     │ 1) Identifica conceito SKOS na frase   │
+     │ 2) Busca relações broader/narrower     │
+     │ 3) Reasoning (OWL-RL)                  │
+     │ 4) Busca contexto no PDF (Search)      │
+     │ 5) Monta prompt para OpenAI            │
+     └────────────────────────────────────────┘
+                |
+                v
+     ┌───────────────────────────────┐
+     │ Azure OpenAI monta resposta   │
+     └───────────────────────────────┘
+                |
+                v
+     ┌───────────────────────────────┐
+     │ FastAPI devolve JSON          │
+     └───────────────────────────────┘
+                |
+                v
+     ┌───────────────────────────────┐
+     │ Foundry apresenta a resposta  │
+     └───────────────────────────────┘
+                |
+                v
+     ┌───────────────────────────────┐
+     │              FIM              │
+     └───────────────────────────────┘
+```
+
+---
+
+## 9. Prints Obrigatórios**
+
+Os **prints** essenciais para avaliação foram adicionados na pasta /prints.
+Acesse cada etapa detalhada pelos links abaixo 👇📸
+
+🚨 Prints Obrigatórios Disponíveis — acesse os links:
+
+🔗 [Página 1](./docs/pagina1.md)
+🔗 [Página 2](./docs/pagina2.md)
+🔗 [Página 3](./docs/pagina2.md)
+---
+---
+
+## 10. Estrutura do Repositório**
 
 ```
 /
@@ -282,20 +391,6 @@ GET /perguntar?q=<texto>
 ```
 
 E mostrará a resposta retornada pela API.
-
----
-
-# **Prints Obrigatórios**
-
-Os **prints** essenciais para avaliação foram adicionados na pasta /prints.
-Acesse cada etapa detalhada pelos links abaixo 👇📸
-
-🚨 Prints Obrigatórios Disponíveis — acesse os links:
-
-🔗 [Página 1](./docs/pagina1.md)
-🔗 [Página 2](./docs/pagina2.md)
-🔗 [Página 3](./docs/pagina2.md)
----
 
 # **Requisitos do Desafio — Checklist Oficial**
 
