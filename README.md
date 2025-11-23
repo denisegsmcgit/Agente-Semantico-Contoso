@@ -23,7 +23,7 @@ O objetivo do agente é justamente **unificar esses dados e reconstruir o contex
 Para isso, o agente combina:
 
 - **conhecimento estruturado** (grafo com conteúdos e relações),  
-- **conteúdo do PDF indexado pelo Azure AI Search AI**,  
+- **conteúdo do PDF indexado pelo Azure AI Search**,  
 - **inferência lógica simples**,  
 - e **interpretação da linguagem natural**.
 
