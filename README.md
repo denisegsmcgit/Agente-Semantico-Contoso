@@ -1,4 +1,4 @@
-# **Agente Semântico Contoso — RAG + SKOS + OWL + Azure Foundry**
+# **Agente Semântico Contoso — Conectando Azure AI Search no Foundry + Grafo Semântico **
 
 Este repositório contém o projeto completo de um **Agente de Inteligência Artificial Semântica**, desenvolvido para o desafio **Azure Frontier Girls – Build Your First Copilot Challenge**.
 
