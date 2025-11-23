@@ -7,7 +7,7 @@ A solução combina:
 - **Ontologias (SKOS + OWL)**  
 - **Raciocínio automático (OWL-RL)**  
 - **RAG semântico**  
-- **Azure Cognitive Search**  
+- **Azure AI Search**  
 - **FastAPI**  
 - **ngrok**  
 - **Azure AI Foundry com ferramenta HTTP**  
@@ -23,7 +23,7 @@ O objetivo do agente é justamente **unificar esses dados e reconstruir o contex
 Para isso, o agente combina:
 
 - **conhecimento estruturado** (grafo com conteúdos e relações),  
-- **conteúdo do PDF indexado pelo Azure Cognitive Search AI**,  
+- **conteúdo do PDF indexado pelo Azure AI Search AI**,  
 - **inferência lógica simples**,  
 - e **interpretação da linguagem natural**.
 
@@ -97,7 +97,7 @@ O LLM usa conhecimento governado, auditável e padronizado.
 O reasoning OWL-RL infere relações broader/narrower, subclasses, transitividades etc.
 
 ### 4.5 Recuperação Dirigida  
-Azure Cognitive Search + Grafo reduzem ruído e melhoram a precisão do RAG.
+Azure AI Search + Grafo reduzem ruído e melhoram a precisão do RAG.
 
 ### 4.6 Explicabilidade  
 Cada resposta pode ser rastreada em:
@@ -114,11 +114,11 @@ Menos tokens → menos chamadas → menor custo de operação.
 ## 5.Arquitetura Geral do Pipeline
 
 ```
-PDF → Azure Cognitive Search → SKOS/OWL Grafo RDF → Reasoning (OWL-RL) 
+PDF → Azure AI Search → SKOS/OWL Grafo RDF → Reasoning (OWL-RL) 
 → RAG → FastAPI → ngrok → Azure Foundry
 ```
 
-### 5.1) **PDF → Azure Cognitive Search**  
+### 5.1) **PDF → Azure AI Search**  
 Indexação para recuperação de insights.
 
 ### 5.2) **Grafo RDF (SKOS + OWL)**  
@@ -162,7 +162,7 @@ Agente usa ferramenta HTTP para consultar o backend.
 |   Pipeline Semântico RAG      |
 |   - Grafo SKOS/OWL            |
 |   - Reasoning OWL-RL          |
-|   - Azure Cognitive Search    |
+|   - Azure AI Search    |
 |   - Interpretação OpenAI      |
 +-------------------------------+
            |
@@ -181,7 +181,7 @@ Agente usa ferramenta HTTP para consultar o backend.
 |--------|------------|--------|
 | 📘 Representação | SKOS, OWL, RDF | Conceitos, categorias e hierarquias |
 | 🧩 Inferência | OWL-RL (owlrl) | Geração de novas triplas inferidas |
-| 🔍 Recuperação | Azure Cognitive Search | Contexto do PDF |
+| 🔍 Recuperação | Azure AI Search | Contexto do PDF |
 | 🔧 API | FastAPI | Endpoint `/perguntar` |
 | 🌐 Exposição | Ngrok | Tornar a API acessível ao Foundry |
 | 🤖 Agente | Azure AI Foundry | Usa a ferramenta HTTP |
@@ -369,7 +369,7 @@ Seu objetivo é atuar como uma camada de apresentação inteligente, interpretan
 
 Descrição do Agente:
 
-Este agente utiliza um backend semântico avançado baseado em SKOS, OWL, reasoning e dados extraídos via Azure Cognitive Search. Através da ferramenta "consultar_api_rag", ele consulta uma API FastAPI exposta via ngrok, que processa perguntas utilizando:
+Este agente utiliza um backend semântico avançado baseado em SKOS, OWL, reasoning e dados extraídos via Azure AI Search. Através da ferramenta "consultar_api_rag", ele consulta uma API FastAPI exposta via ngrok, que processa perguntas utilizando:
 
 - Grafo semântico RDF (SKOS + OWL)
 - Regras de inferência OWL-RL
@@ -432,7 +432,7 @@ Implementação futura: integrar o Agente Semântico Contoso ao futuro Agente de
 
 Azure AI Foundry — https://ai.azure.com
 
-Azure Cognitive Search — https://learn.microsoft.com/azure/search/
+Azure AI Search — https://learn.microsoft.com/azure/search/
 
 Azure OpenAI Service — https://learn.microsoft.com/azure/ai-services/openai/
 
