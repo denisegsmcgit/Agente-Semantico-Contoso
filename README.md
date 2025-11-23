@@ -250,10 +250,9 @@ Agente usa ferramenta HTTP para consultar o backend.
                         └──────────────────────────────┘
 
 ```
-
 ---
 
-## 9. Prints Obrigatórios**
+## 9. Prints Obrigatórios
 
 Os **prints** essenciais para avaliação foram adicionados na pasta /prints.
 Acesse cada etapa detalhada pelos links abaixo 👇📸
@@ -262,11 +261,20 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 🔗 [Página 1](./docs/pagina1.md)
 🔗 [Página 2](./docs/pagina2.md)
-🔗 [Página 3](./docs/pagina2.md)
----
+🔗 [Página 3](./docs/pagina3.md)
 ---
 
-## **10. Estrutura do Repositório**
+## 10. Agente funcional no Foundry
+
+![](../prints/foundry1.png)
+
+![](../prints/foundry2.png)
+
+![](../prints/37.png)
+
+*Mais prints do agente no Foundry em [](./docs/pagina3.md)
+
+## 11. Estrutura do Repositório
 
 ```
 /
