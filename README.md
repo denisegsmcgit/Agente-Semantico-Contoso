@@ -15,6 +15,23 @@ A solução combina:
 Criando um agente capaz de responder perguntas de forma precisa, explicável e alinhada ao conhecimento oficial da empresa *Contoso* (empresa fictícia para fins educativos).
 
 ---
+## Objetivo do Agente
+
+A Contoso precisava de um **Analista Virtual Semântico**, capaz de conectar diferentes fontes de informação que, isoladas, não entregavam respostas completas.  
+O objetivo do agente é justamente **unificar esses dados e reconstruir o contexto** necessário para responder perguntas de forma clara e fundamentada.
+
+Para isso, o agente combina:
+
+- **conhecimento estruturado** (grafo com conteúdos e relações),  
+- **conteúdo do PDF indexado pelo Azure Cognitive Search AI**,  
+- **inferência lógica simples**,  
+- e **interpretação da linguagem natural**.
+
+Essa integração permite que o agente realize **RAG semântico**, onde:
+- o grafo entende o contexto e como os conteúdos se relacionam,  
+- e o Azure Search AI traz os trechos relevantes do PDF.
+
+Assim, o agente consegue responder perguntas que dependem de **contexto, relações e evidências**, entregando análises mais completas dentro do Azure AI Foundry.
 
 #  **Problema de Negócio**
 
