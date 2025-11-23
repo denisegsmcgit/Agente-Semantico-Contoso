@@ -266,26 +266,24 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 ---
 ---
 
-## 10. Estrutura do Repositório**
+## **10. Estrutura do Repositório**
 
-```
 ```
 /
-├── api.py                         # API FastAPI do agente
-├── requirements.txt               # Dependências Python
-├── openapi.json                   # Esquema da ferramenta HTTP usada no Foundry
-├── README.md                      # Este arquivo
+├── api.py                        # API FastAPI do agente
+├── requirements.txt              # Dependências Python
+├── openapi.json                  # Esquema da ferramenta HTTP usada no Foundry
+├── README.md                     # Este arquivo
 │
 ├── data/
-│   ├── knowledge_graph.ttl        # Grafo RDF com SKOS + OWL
-│   ├── planilha_equipe_dados.xlsx # Planilha usada para estruturar o grafo
-│   └── documento.pdf              # PDF indexado no Azure AI Search
+│   ├── knowledge_graph.ttl       # Grafo RDF com SKOS + OWL
+│   ├── planilha_equipe_dados.xlsx# Planilha usada para estruturar o grafo
+│   └── documento.pdf             # PDF indexado no Azure AI Search
 │
 ├── notebooks/
-│   └── notebook.ipynb             # Pipeline completo: XLSX → PDF → Grafo → RAG
+│   └── notebook.ipynb            # Pipeline completo: XLSX → PDF → Grafo → RAG
 │
-└── prints/                        # Prints de execução e Foundry
-
+└── prints/                       # Prints de execução e Foundry
 ```
 
 ---
