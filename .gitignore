@@ -1,0 +1,68 @@
+# --- ESSENCIAL PARA PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- AMBIENTES VIRTUAIS ---
+.env/
+.venv/
+venv/
+ENV/
+env/
+banana/
+
+# --- CONFIGURAÇÕES DE EDITOR ---
+.vscode/
+.idea/
+
+# --- ARQUIVOS DE LOG E CACHE ---
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.sqlite
+
+# --- NOTEBOOKS ---
+.ipynb_checkpoints/
+
+# --- BUILD ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- ARQUIVOS SENSÍVEIS ---
+*.env
+.env
+*.key
+*.pem
+
+# --- SISTEMA OPERACIONAL ---
+Thumbs.db
+.DS_Store
+
+# --- PYTHON PACKAGES ---
+*.egg
+pip-wheel-metadata/
+
+# --- CACHE DE LIBS ---
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# --- ARQUIVOS TEMPORÁRIOS ---
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- ARQUIVOS DO JUPYTER ---
+profile_default/
+ipython_config.py
+
+# --- OUTROS ---
+*.zip

@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API Agente Semântico Contoso",
+    "description": "API que consulta o agente RAG semântico baseado em SKOS + OWL + Reasoning.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/perguntar": {
+      "get": {
+        "summary": "Consultar agente semântico",
+        "description": "Recebe uma pergunta e retorna a resposta do agente RAG semântico.",
+        "operationId": "consultar_agente_rag",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "description": "Pergunta enviada ao agente semântico",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resposta do agente semântico",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    },
+                    "pergunta": {
+                      "type": "string",
+                      "example": "Produtos"
+                    },
+                    "resposta": {
+                      "type": "string",
+                      "example": "Texto de resposta gerado pelo agente."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erro de requisição"
+          },
+          "500": {
+            "description": "Erro interno no servidor"
+          }
+        }
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://api-agente-semantic.scm.azurewebsites.net/"
+
+    }
+  ]
+}
