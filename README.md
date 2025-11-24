@@ -266,8 +266,8 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 ## 10. Agente funcional no Foundry
 
-![](prints/foundry1.png)
-![](prints/foundry2.png)
+![](prints/39.png)
+![](prints/38.png)
 ![](prints/37.png)
 
 *Mais prints do agente no Foundry: [clique aqui](./docs/pagina3.md)*
