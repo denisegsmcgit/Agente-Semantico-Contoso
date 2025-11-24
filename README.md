@@ -259,12 +259,19 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 🚨 Prints Obrigatórios Disponíveis — acesse os links:
 
+[📄 Abrir PDF](./1-mesclado.pdf)
+[📄 Abrir PDF](./31-mesclado.pdf)
+
+
 🔗 [Página 1](./docs/pagina1.md)
 🔗 [Página 2](./docs/pagina2.md)
 🔗 [Página 3](./docs/pagina3.md)
+
 ---
 
 ## 10. Agente funcional no Foundry
+
+[📄 Abrir PDF](./37-mesclado.pdf)
 
 ![](prints/39.png)
 ![](prints/38.png)
