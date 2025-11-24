@@ -1,9 +1,9 @@
 # **Agente Funcional no Foundry**
 
-![](prints/37.png)
-![](prints/38.png)
-![](prints/39.png)
-![](prints/40.png)
-![](prints/41.png)
-![](prints/42.png)
+![img](prints/37.png)
+![img](prints/38.png)
+![img](prints/39.png)
+![img](prints/40.png)
+![img](prints/41.png)
+![img](prints/42.png)
 
