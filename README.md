@@ -261,7 +261,7 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 [📄 Abrir PDF](./docs/1-mesclado.pdf)
 
-[📄 Abrir PDF](./docs/31-mesclado.pdf)
+[📄 Abrir PDF](./docs/mesclado.pdf)
 
 🔗 [Página 1](./docs/pagina1.md)
 🔗 [Página 2](./docs/pagina2.md)
@@ -271,11 +271,11 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 ## 10. Agente funcional no Foundry
 
-[📄 Abrir PDF](./37-mesclado.pdf)
+[📄 Abrir PDF](./docs/37-mesclado.pdf)
 
-![](prints/39.png)
-![](prints/38.png)
-![](prints/37.png)
+![img1](prints/39.png)
+![img2](prints/38.png)
+![img3](prints/37.png)
 
 *Mais prints do agente no Foundry: [clique aqui](./docs/pagina3.md)*
 

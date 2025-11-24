@@ -1,8 +1,8 @@
 # **Agente Rodando no VSCode**
 
-![](prints/31.png)
-![](prints/32.png)
-![](prints/33.png)
-![](prints/34.png)
-![](prints/35.png)
-![](prints/36.png)
+![img](prints/31.png)
+![img](prints/32.png)
+![img](prints/33.png)
+![img](prints/34.png)
+![img](prints/35.png)
+![img](prints/36.png)
