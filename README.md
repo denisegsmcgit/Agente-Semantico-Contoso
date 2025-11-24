@@ -259,9 +259,9 @@ Acesse cada etapa detalhada pelos links abaixo 👇📸
 
 🚨 Prints Obrigatórios Disponíveis — acesse os links:
 
-[📄 Abrir PDF](./1-mesclado.pdf)
-[📄 Abrir PDF](./31-mesclado.pdf)
+[📄 Abrir PDF](./docs/1-mesclado.pdf)
 
+[📄 Abrir PDF](./docs/31-mesclado.pdf)
 
 🔗 [Página 1](./docs/pagina1.md)
 🔗 [Página 2](./docs/pagina2.md)
