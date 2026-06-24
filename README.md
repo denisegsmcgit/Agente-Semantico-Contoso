@@ -5,7 +5,6 @@ Este repositório contém o projeto completo de um **Agente de Inteligência Art
 A solução combina:
 
 - **Ontologias (SKOS + OWL)**  
-- **Raciocínio automático (OWL-RL)**  
 - **RAG semântico**  
 - **Azure AI Search**  
 - **FastAPI**  
@@ -24,7 +23,7 @@ Para isso, o agente combina:
 
 - **conhecimento estruturado** (grafo com conteúdos e relações),  
 - **conteúdo do PDF indexado pelo Azure AI Search**,  
-- **inferência lógica simples**,  
+- **modelagem semântica baseada em SKOS e OWL**,  
 - e **interpretação da linguagem natural**.
 
 Essa integração permite que o agente realize **RAG semântico**, onde:
@@ -70,7 +69,7 @@ Construir um agente inteligente que:
 
 - entende a pergunta do usuário em linguagem natural  
 - identifica conceitos SKOS corretamente  
-- usa OWL para inferir relações não explícitas  
+- utiliza ontologias OWL para representar relações semânticas entre conceitos  
 - busca contexto no PDF indexado  
 - gera respostas analíticas e explicáveis  
 - responde através do Azure Foundry usando ferramenta HTTP  
@@ -93,8 +92,8 @@ SKOS/OWL mantém categorias e relações coerentes, independentemente da forma d
 ### 4.3 Contexto Estruturado  
 O LLM usa conhecimento governado, auditável e padronizado.
 
-### 4.4 Inferências que o LLM não consegue fazer  
-O reasoning OWL-RL infere relações broader/narrower, subclasses, transitividades etc.
+### 4.4 Estrutura Semântica Explícita
+O uso combinado de SKOS e OWL permite representar conceitos, categorias e relações de forma formal e reutilizável, oferecendo uma camada semântica complementar ao LLM.
 
 ### 4.5 Recuperação Dirigida  
 Azure AI Search + Grafo reduzem ruído e melhoram a precisão do RAG.
@@ -114,7 +113,7 @@ Menos tokens → menos chamadas → menor custo de operação.
 ## 5.Arquitetura Geral do Pipeline
 
 ```
-Planilha (.xlsx) → PDF → Azure AI Search → SKOS/OWL Grafo RDF → Reasoning (OWL-RL) → RAG → FastAPI → ngrok → Azure Foundry
+Planilha (.xlsx) → PDF → Azure AI Search → Grafo RDF (SKOS/OWL) → RAG Semântico → FastAPI → ngrok → Azure Foundry
 
 ```
 
@@ -180,7 +179,7 @@ Agente usa ferramenta HTTP para consultar o backend.
 | Camada | Tecnologia | Função |
 |--------|------------|--------|
 | 📘 Representação | SKOS, OWL, RDF | Conceitos, categorias e hierarquias |
-| 🧩 Inferência | OWL-RL (owlrl) | Geração de novas triplas inferidas |
+| 🧩 Semântica | SKOS + OWL | Representação formal de conceitos e relações |
 | 🔍 Recuperação | Azure AI Search | Contexto do PDF |
 | 🔧 API | FastAPI | Endpoint `/perguntar` |
 | 🌐 Exposição | Ngrok | Tornar a API acessível ao Foundry |
@@ -221,7 +220,7 @@ Agente usa ferramenta HTTP para consultar o backend.
             │                                                          │
             │ 2) Verifica relações: categorias, hierarquias, conexões  │
             │                                                          │
-            │ 3) Reasoning OWL-RL → deduz relações não explícitas      │
+            │ 3) Utiliza as relações semânticas definidas no grafo RDF │
             │                                                          │
             │ 4) Busca contexto no PDF via Azure Cognitive Search AI   │
             │    (indexado previamente)                                │
@@ -424,10 +423,13 @@ A solução entrega:
 - integração real com Foundry  
 - grafos de conhecimento + IA generativa  
 
-# **Implementações Futuras**
+# Implementações Futuras
 
-Implementação futura: integrar o Agente Semântico Contoso ao futuro Agente de Governança Semântica, conectando-se ao **Purview** para operações automáticas em glossários e coleções.
+- Integração de um mecanismo de inferência semântica baseado em OWL-RL para geração automática de novas relações no grafo RDF.
 
+- Ampliação do grafo para suportar regras de negócio e consultas semânticas mais complexas.
+
+- Integração do Agente Semântico Contoso ao futuro Agente de Governança Semântica, conectando-se ao Purview para operações automáticas em glossários e coleções.
 ---
 
 # **Referências**
