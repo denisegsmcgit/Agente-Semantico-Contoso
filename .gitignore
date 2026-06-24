@@ -70,3 +70,6 @@ ipython_config.py
 
 # Dados locais / arquivos de entrada
 /data/
+
+
+knowledge_graph.ttl
