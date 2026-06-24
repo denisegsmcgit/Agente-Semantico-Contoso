@@ -66,3 +66,7 @@ ipython_config.py
 
 # --- OUTROS ---
 *.zip
+
+
+# Dados locais / arquivos de entrada
+/data/
